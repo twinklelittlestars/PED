@@ -1,0 +1,16 @@
+[
+    ({"HospitalName": ("<=", 0.0)}, ("ZipCode", ("<=", 0.0))),
+    ({"HospitalName": ("<=", 0.0)}, ("PhoneNumber", ("<=", 0.0))),
+    ({"MeasureCode": ("<=", 0.0)}, ("MeasureName", ("<=", 0.0))),
+    ({"MeasureCode": ("<=", 0.0)}, ("Stateavg", ("<=", 0.0))),
+    ({"ProviderNumber": ("<=", 0.0)}, ("HospitalName", ("<=", 0.0))),
+    ({"MeasureCode": ("<=", 0.0)}, ("Condition", ("<=", 0.0))),
+    ({"HospitalName": ("<=", 0.0)}, ("Address1", ("<=", 0.0))),
+    ({"HospitalName": ("<=", 0.0)}, ("HospitalOwner", ("<=", 0.0))),
+    ({"HospitalName": ("<=", 0.0)}, ("ProviderNumber", ("<=", 0.0))),
+    ({"City": ("<=", 0.0)}, ("CountyName", ("<=", 0.0))),
+    ({"ZipCode": ("<=", 0.0)}, ("EmergencyService", ("<=", 0.0))),
+    ({"HospitalName": ("<=", 0.0)}, ("City", ("<=", 0.0))),
+    ({"MeasureName": ("<=", 0.0)}, ("MeasureCode", ("<=", 0.0))),
+    ({"HospitalName": ("<=", 0.0), "PhoneNumber": ("<=", 0.0), "HospitalOwner": ("<=", 0.0),}, ("State", ("<=", 0.0)))
+]

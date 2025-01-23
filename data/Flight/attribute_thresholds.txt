@@ -1,0 +1,9 @@
+{
+    "surname": 0.1,
+    "birthplace": 0.1,
+    "birthyear": 0.1,
+    "name": 0.1,
+    "city": 0.1,
+    "manager": 0.1,
+    "team": 0.1
+}

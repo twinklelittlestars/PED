@@ -1,0 +1,8 @@
+[
+    ({"flight": ("<=", 0.0)}, ("actArrTime", ("<=", 0.0))),
+    ({"flight": ("<=", 0.0)}, ("schedArrTime", ("<=", 0.0))),
+    ({"flight": ("<=", 0.0)}, ("actDepTime", ("<=", 0.0))),
+    ({"flight": ("<=", 0.0)}, ("schedDepTime", ("<=", 0.0))),
+    ({"schedArrTime": ("<=", 0.0)}, ("actArrTime", ("<=", 0.0))),
+    ({"schedDepTime": ("<=", 0.0)}, ("actDepTime", ("<=", 0.0)))
+]
