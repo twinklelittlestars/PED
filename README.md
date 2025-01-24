@@ -1,4 +1,4 @@
-# Parallel Error Detection (PED) and Incremental Parallel Error Detection (IPED)
+# Minimum Change ≠ Best Cleaning: Parallel and Incremental Error Detection under Integrity Constraints
 
 This repository provides the source code, data, and supplementary materials for **Parallel Error Detection (PED)** and **Incremental Parallel Error Detection (IPED)**.
 
