@@ -16,7 +16,7 @@ This repository provides the source code, data, and supplementary materials for 
 
 ## File Explanations
 
-- **codes/**  
+- **[`codes`](codes)**  
   Contains all source code implementations:
 
   - **PED.py**: Main script for the algorithm PED
