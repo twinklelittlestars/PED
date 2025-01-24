@@ -1,9 +1,7 @@
 {
-    "surname": 0.1,
-    "birthplace": 0.1,
-    "birthyear": 0.1,
-    "name": 0.1,
-    "city": 0.1,
-    "manager": 0.1,
-    "team": 0.1
+    "flight": 0.1,
+    "actArrTime": 0.1,
+    "schedArrTime": 0.65,
+    "actDepTime": 0.98,
+    "schedDepTime": 0.74
 }

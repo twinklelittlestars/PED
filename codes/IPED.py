@@ -2,8 +2,6 @@ import os
 import time
 
 import pandas as pd
-import xlsxwriter
-from MWVC import build_graph_parallel
 from utils.cluster_utils import (
     generate_clusters_parallel,
     generate_clusters_parallel_incremental,
@@ -22,20 +20,21 @@ from utils.evaluation_utils import (
     calculate_precision_recall_f1,
     check_all_pairs_covered,
 )
+from utils.MWVC import build_graph_parallel
 from utils.preprocessing import generate_probability_files
 
 if __name__ == "__main__":
     # ------------------------------------------------------------------
     # 1) Read dd_constraints from a text file
     # ------------------------------------------------------------------
-    dd_constraints_file = "Incremental_data\dd_constraints.txt"
+    dd_constraints_file = "path\Incremental_data\dd_constraints.txt"
     with open(dd_constraints_file, "r", encoding="utf-8") as f:
         dd_constraints = eval(f.read())
 
     # ------------------------------------------------------------------
     # 2) Read attribute_thresholds from a text file
     # ------------------------------------------------------------------
-    attribute_thresholds_file = "Incremental_data\attribute_thresholds.txt"
+    attribute_thresholds_file = "path\Incremental_data\attribute_thresholds.txt"
     with open(attribute_thresholds_file, "r", encoding="utf-8") as f:
         attribute_thresholds = eval(f.read())
 
@@ -77,7 +76,7 @@ if __name__ == "__main__":
         )
 
         # The directory for this incremental step
-        base_dir = os.path.join("Incremental_data", f"Soccer_{inc_size}k")
+        base_dir = os.path.join("path\Incremental_data", f"Soccer_{inc_size}k")
 
         # Key files: throughout data + difference
         throughout_dirty_file = os.path.join(base_dir, "throughout_dirty.csv")
@@ -249,24 +248,3 @@ if __name__ == "__main__":
     df_results = pd.DataFrame(results_summary)
     print("\n====== All Results Summary ======")
     print(df_results)
-
-    excel_file = "incremental_final_results.xlsx"
-    with xlsxwriter.Workbook(excel_file) as writer:
-        df_results.to_excel(writer, index=False, sheet_name="Incremental")
-        workbook = writer.book
-        worksheet = writer.sheets["Incremental"]
-        float_format = workbook.add_format({"num_format": "0.0000"})
-        text_format = workbook.add_format({"num_format": "@"})
-        for idx, col in enumerate(df_results.columns):
-            if col in [
-                "Time_Original_Total",
-                "Time_Inc_Total",
-                "Precision",
-                "Recall",
-                "F1",
-            ]:
-                worksheet.set_column(idx, idx, 18, float_format)
-            else:
-                worksheet.set_column(idx, idx, 14, text_format)
-
-    print(f"\nThe final incremental results have been saved to '{excel_file}'")
