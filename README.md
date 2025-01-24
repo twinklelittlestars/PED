@@ -2,8 +2,6 @@
 
 This repository provides the source code, data, and supplementary materials for **Minimum Change ≠ Best Cleaning: Parallel and Incremental Error Detection under Integrity Constraints**.
 
----
-
 ## Environment & Dependencies
 
 - **Python version**: 3.9.12
@@ -11,8 +9,6 @@ This repository provides the source code, data, and supplementary materials for 
   ```bash
   pip install -r requirements.txt
   ```
-
----
 
 ## File Explanations
 
@@ -40,8 +36,6 @@ This repository provides the source code, data, and supplementary materials for 
 - **[`requirements.txt`](./requirements.txt)**  
   Lists all needed Python packages
 
----
-
 ## Usage
 
 ### Running IPED
@@ -61,8 +55,6 @@ python PED.py
 ```
 
 You may need edit paths and parameters in the script if necessary.
-
----
 
 ## Data Sources
 
