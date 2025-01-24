@@ -44,6 +44,8 @@ This repository provides the source code, data, and supplementary materials for 
 - **requirements.txt**  
   Lists all needed Python packages
 
+---
+
 ## Usage
 
 ### Running IPED
@@ -63,6 +65,8 @@ python PED.py
 ```
 
 You may need edit paths and parameters in the script if necessary.
+
+---
 
 ## Data Sources
 
