@@ -54,7 +54,7 @@ For example, run the algorithm IPED with the Flight dataset:
 python PED.py
 ```
 
-You may need edit paths and parameters in the script if necessary.
+You may need edit paths and parameters in the script if necessary. If you plan to switch to a different dataset, please remember to update the [`distance_utils.py`](./codes/utils/distance_utils.py) file, where the `STRING_COLUMNS` and `INT_COLUMNS` variables define which columns are treated as strings or integers.
 
 ## Data Sources
 
