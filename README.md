@@ -50,8 +50,8 @@ OCQA is included in the environment configured for PED & IPED.
   - Each dataset folder (e.g., [`Flight`](./data/Flight/), [`Hospital`](./data/Hospital/), [`Soccer`](./data/Soccer/), [`MIMIC`](./data/MIMIC/), [`Plane`](./data/Plane/)) contains:
     - **dirty** (`dirty.csv`) and **clean** (`clean.csv`) datasets
     (For **MIMIC** and **Plane**, no official clean version is provided; the `clean.csv` file is generated based on manual correction.)
-    - **`dd_constraints_fd.txt`**: FD constraints used for our methods PED and IPED
-    - **`dd_constraints_dd.txt`**: DD constraints used for our methods PED and IPED
+    - **`dd_constraints_fd.txt`**: FD constraints used for PED, IPED, FastDD, OCQA
+    - **`dd_constraints_dd.txt`**: DD constraints used for PED, IPED, FastDD, OCQA
     - **`dd_constraints_dc.txt`**: Diverse Denial Constraints used by methods like BigDansing, Holistic, and HoloClean
     - **`attribute_thresholds.txt`**: Probability thresholds for each attribute
     - **`difference.csv`**: Ground-truth error cells in the dirty dataset
