@@ -1,0 +1,11 @@
+{
+  "subject_id": 1e-5,
+  "hadm_id": 1e-5,
+  "stay_id": 1e-5,
+  "caregiver_id": 1e-5,
+  "charttime": 1e-5,
+  "storetime": 1e-5,
+  "itemid": 0.001,
+  "value": 0.0001,
+  "valueuom": 0.9
+}

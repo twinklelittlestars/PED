@@ -1,0 +1,7 @@
+t1&t2&EQ(t1.flight,t2.flight)&IQ(t1.actArrTime,t2.actArrTime)
+t1&t2&EQ(t1.flight,t2.flight)&IQ(t1.schedArrTime,t2.schedArrTime)
+t1&t2&EQ(t1.flight,t2.flight)&IQ(t1.actDepTime,t2.actDepTime)
+t1&t2&EQ(t1.flight,t2.flight)&IQ(t1.schedDepTime,t2.schedDepTime)
+t1&t2&EQ(t1.schedDepTime,t2.schedDepTime)&EQ(t1.schedArrTime,t2.schedArrTime)&IQ(t1.flight,t2.flight)
+t1&t2&EQ(t1.actDepTime,t2.actDepTime)&EQ(t1.actArrTime,t2.actArrTime)&IQ(t1.flight,t2.flight)
+t1&t2&EQ(t1.actDepTime,t2.actDepTime)&EQ(t1.actArrTime,t2.actArrTime)&EQ(t1.schedDepTime,t2.schedDepTime)&EQ(t1.schedArrTime,t2.schedArrTime)&IQ(t1.flight,t2.flight)
