@@ -109,7 +109,7 @@ To run the algorithm IPED, use:
 python IPED.py
 ```
 
-You may need edit paths and parameters in the script if necessary. If you plan to switch to a different dataset, please remember to update the [`distance_utils.py`](./codes/utils/distance_utils.py) file, where the `STRING_COLUMNS` and `INT_COLUMNS` variables define which columns are treated as strings or integers.
+You may need edit paths and parameters in the script if necessary. If you plan to switch to a different dataset, please remember to update the [`distance_utils.py`](./codes/PED&IPED/utils/distance_utils.py) file, where the `STRING_COLUMNS` and `INT_COLUMNS` variables define which columns are treated as strings or integers.
 
 ### Running FastDD
 
