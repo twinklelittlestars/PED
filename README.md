@@ -39,7 +39,7 @@ OCQA is included in the environment configured for PED & IPED.
     - The improved logic for FastDD is placed under [`evaluation`](./codes/FastDD/src/main/java/fastdd/evaluation/).
 
   - **[`densitysrepair`](./codes/densitysrepair/)**: Contains adapted versions of HEURISTIC and RELAXATION methods.
-    - **[`run_all.sh`](./codes/densitysrepair/src/test/run_all.sh)**: Script for evaluating the method at the cell-level rather than the tuple-level.
+    - **[`run_all.sh`](./codes/densitysrepair/src/test/run_all.sh)**: Script for evaluating the methods at the cell-level rather than the tuple-level.
 
   - **[`OCQA`](./codes/OCQA/)**: Implementation of the OCQA method.
     - **[`opcqa.py`](./codes/OCQA/opcqa.py)**: Main script for running the OCQA method.
