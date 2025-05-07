@@ -1,10 +1,11 @@
-import os
-import json
 import copy
+import json
+import os
 import time
-import pandas as pd
-import numpy as np
 from subprocess import run
+
+import numpy as np
+import pandas as pd
 
 # ------------------------------------------------------------------
 # 1) Configuration Parameters
@@ -50,12 +51,12 @@ initial_thresholds = {
     "actArrTime": 0.0,
     "schedArrTime": 0.0,
     "actDepTime": 0.0,
-    "schedDepTime": 0.0
+    "schedDepTime": 0.0,
 }
 
 thresholds_file = "path/PED/data/Flight/attribute_thresholds.txt"
 result_file = "path/PED/data/Flight/result.csv"
-run_script = "path/PED/codes/PED&IPED/PED.py"  
+run_script = "path/PED/codes/PEDandIPED/PED.py"
 
 
 # ------------------------------------------------------------------
@@ -128,7 +129,7 @@ if __name__ == "__main__":
     print("\n===== Final Best Thresholds =====")
     for attr, val in best_thresholds.items():
         print(f"{attr}: {val}")
-    
+
     with open(thresholds_file, "w") as f:
         json.dump(best_thresholds, f)
     print(f"Saved best thresholds to {thresholds_file}")

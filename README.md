@@ -6,7 +6,7 @@ This repository provides the source code, data, and supplementary materials for 
 
 ### PED & IPED
 
-- **Python version**: 3.9.12  
+- **Python version**: 3.9.12
 - Other required packages are listed in [`requirements.txt`](./requirements.txt). You can install them using:
   ```bash
   pip install -r requirements.txt
@@ -28,28 +28,30 @@ OCQA is included in the environment configured for PED & IPED.
 
 - **[`codes`](./codes)**: Contains all source code implementations
 
-  - **[`PED&IPED`](./codes/PED&IPED/)**: Contains our implementation of the PED method and the incremental IPED method.
-    - **[`PED.py`](./codes/PED&IPED/PED.py)**: Main script for the method PED
-    - **[`IPED.py`](./codes/PED&IPED/IPED.py)**: Main script for the method IPED
-    - **[`tune_thresholds.py`](./codes/PED&IPED/tune_thresholds.py)**: Script for selecting probability thresholds using the validation set
+  - **[`PEDandIPED`](./codes/PEDandIPED/)**: Contains our implementation of the PED method and the incremental IPED method.
+
+    - **[`PED.py`](./codes/PEDandIPED/PED.py)**: Main script for the method PED
+    - **[`IPED.py`](./codes/PEDandIPED/IPED.py)**: Main script for the method IPED
+    - **[`tune_thresholds.py`](./codes/PEDandIPED/tune_thresholds.py)**: Script for selecting probability thresholds using the validation set
     - Other supporting modules and utility functions are also included
 
   - **[`FastDD`](./codes/FastDD/)**: Contains the modified implementation of the FastDD method.
+
     - **[`run_all.sh`](./codes/FastDD/src/main/java/fastdd/evaluation/run_all.sh)**: Execution script for evaluating FastDD in the error detection setting.
     - The improved logic for FastDD is placed under [`evaluation`](./codes/FastDD/src/main/java/fastdd/evaluation/).
 
   - **[`densitysrepair`](./codes/densitysrepair/)**: Contains adapted versions of HEURISTIC and RELAXATION methods.
+
     - **[`run_all.sh`](./codes/densitysrepair/src/test/run_all.sh)**: Script for evaluating the methods at the cell-level rather than the tuple-level.
 
   - **[`OCQA`](./codes/OCQA/)**: Implementation of the OCQA method.
     - **[`opcqa.py`](./codes/OCQA/opcqa.py)**: Main script for running the OCQA method.
-  
 
 - **[`data`](./data)**: Includes the datasets used in our experiments
 
   - Each dataset folder (e.g., [`Flight`](./data/Flight/), [`Hospital`](./data/Hospital/), [`Soccer`](./data/Soccer/), [`MIMIC`](./data/MIMIC/), [`Plane`](./data/Plane/)) contains:
     - **dirty** (`dirty.csv`) and **clean** (`clean.csv`) datasets
-    (For **MIMIC** and **Plane**, no official clean version is provided; the `clean.csv` file is generated based on manual correction.)
+      (For **MIMIC** and **Plane**, no official clean version is provided; the `clean.csv` file is generated based on manual correction.)
     - **`dd_constraints_fd.txt`**: FD constraints used for PED, IPED, FastDD, OCQA
     - **`dd_constraints_dd.txt`**: DD constraints used for PED, IPED, FastDD, OCQA
     - **`dd_constraints_dc.txt`**: Diverse DC constraints used by methods like BigDansing, Holistic, and HoloClean
@@ -109,7 +111,7 @@ To run the algorithm IPED, use:
 python IPED.py
 ```
 
-You may need edit paths and parameters in the script if necessary. If you plan to switch to a different dataset, please remember to update the [`distance_utils.py`](./codes/PED&IPED/utils/distance_utils.py) file, where the `STRING_COLUMNS` and `INT_COLUMNS` variables define which columns are treated as strings or integers.
+You may need edit paths and parameters in the script if necessary. If you plan to switch to a different dataset, please remember to update the [`distance_utils.py`](./codes/PEDandIPED/utils/distance_utils.py) file, where the `STRING_COLUMNS` and `INT_COLUMNS` variables define which columns are treated as strings or integers.
 
 ### Running FastDD
 
@@ -132,7 +134,6 @@ chmod +x src/test/run_all.sh
 ```bash
 python opcqa.py
 ```
-
 
 ## Data Sources
 
