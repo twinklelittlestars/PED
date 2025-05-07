@@ -39,7 +39,7 @@ OCQA is included in the environment configured for PED & IPED.
     - The improved logic for FastDD is placed under [`evaluation`](./codes/FastDD/src/main/java/fastdd/evaluation/).
 
   - **[`densitysrepair`](./codes/densitysrepair/)**: Contains adapted versions of HEURISTIC and RELAXATION methods.
-    - **[`run_all.sh`](./codes/densitysrepair/src/test/run_all.sh)**: Script for evaluating the methods at the cell-level rather than the tuple-level.
+    - **[`run_all.sh`](./codes/densitysrepair/src/test/run_all.sh)**: Script for evaluating the method at the cell-level rather than the tuple-level.
 
   - **[`OCQA`](./codes/OCQA/)**: Implementation of the OCQA method.
     - **[`opcqa.py`](./codes/OCQA/opcqa.py)**: Main script for running the OCQA method.
@@ -48,7 +48,7 @@ OCQA is included in the environment configured for PED & IPED.
 - **[`data`](./data)**: Includes the datasets used in our experiments
 
   - Each dataset folder (e.g., [`Flight`](./data/Flight/), [`Hospital`](./data/Hospital/), [`Soccer`](./data/Soccer/), [`MIMIC`](./data/MIMIC/), [`Plane`](./data/Plane/)) contains:
-    - **Dirty** (`dirty.csv`) and **clean** (`clean.csv`) datasets
+    - **dirty** (`dirty.csv`) and **clean** (`clean.csv`) datasets
     (For **MIMIC** and **Plane**, no official clean version is provided; the `clean.csv` file is generated based on our cleaning process.)
     - **`dd_constraints_fd.txt`**: FD constraints used for our methods PED and IPED
     - **`dd_constraints_dd.txt`**: DD constraints used for our methods PED and IPED
