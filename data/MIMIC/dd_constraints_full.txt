@@ -1,0 +1,736 @@
+{ [caregiver_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [valueuom(>0.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(<=0.0)] -> [value(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] -> [hadm_id(<=0.0)]}
+{ [stay_id(<=0.0)] ∧ [charttime(>7.0)] -> [caregiver_id(<=0.0)]}
+{ [itemid(>949.0)] ∧ [value(<=0.0)] ∧ [storetime(>9.0)] -> [caregiver_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>7.0)] -> [valueuom(>0.0)]}
+{ [itemid(>949.0)] ∧ [value(<=0.0)] ∧ [storetime(<=0.0)] -> [charttime(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [itemid(>950.0)]}
+{ [stay_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>6.0)] -> [storetime(<=0.0)]}
+{ [value(<=0.0)] ∧ [charttime(<=0.0)] ∧ [storetime(<=0.0)] -> [valueuom(>0.0)]}
+{ [stay_id(<=0.0)] ∧ [storetime(>8.0)] -> [caregiver_id(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>6.0)] -> [itemid(>950.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [charttime(>7.0)]}
+{ [itemid(<=0.0)] ∧ [charttime(<=0.0)] -> [storetime(>9.0)]}
+{ [itemid(>949.0)] ∧ [value(<=0.0)] ∧ [storetime(>9.0)] -> [hadm_id(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] -> [stay_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [storetime(>8.0)] -> [charttime(>7.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [valueuom(>0.0)]}
+{ [valueuom(>0.0)] -> [charttime(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [storetime(>8.0)] -> [value(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [charttime(>7.0)] ∧ [storetime(>8.0)] -> [value(>134.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [storetime(>8.0)] -> [valueuom(>0.0)]}
+{ [hadm_id(<=0.0)] ∧ [charttime(>7.0)] -> [value(>134.0)]}
+{ [caregiver_id(<=0.0)] ∧ [storetime(>9.0)] -> [itemid(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [charttime(<=0.0)] -> [itemid(>950.0)]}
+{ [subject_id(>2316.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [charttime(>6.0)]}
+{ [charttime(>6.0)] ∧ [storetime(<=0.0)] -> [value(<=0.0)]}
+{ [charttime(<=0.0)] ∧ [storetime(>8.0)] -> [value(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>6.0)] -> [storetime(>9.0)]}
+{ [itemid(>949.0)] ∧ [value(<=0.0)] ∧ [storetime(>9.0)] -> [stay_id(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [charttime(>7.0)] -> [valueuom(>0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [storetime(>9.0)] -> [charttime(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [storetime(>9.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(<=0.0)] -> [valueuom(>0.0)]}
+{ [valueuom(>0.0)] -> [value(>134.0)]}
+{ [stay_id(<=0.0)] ∧ [storetime(>8.0)] -> [itemid(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [charttime(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [storetime(>8.0)] -> [value(>134.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [charttime(>6.0)] -> [storetime(<=0.0)]}
+{ [subject_id(<=0.0)] -> [valueuom(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [stay_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [value(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [stay_id(<=0.0)] -> [charttime(>7.0)]}
+{ [caregiver_id(<=0.0)] ∧ [storetime(>9.0)] -> [hadm_id(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(<=0.0)] -> [value(>134.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>7.0)] -> [value(>134.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [storetime(>9.0)]}
+{ [hadm_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [caregiver_id(<=0.0)]}
+{ [charttime(<=0.0)] ∧ [storetime(>8.0)] -> [value(>134.0)]}
+{ [subject_id(>2396.0)] ∧ [charttime(>7.0)] -> [itemid(>950.0)]}
+{ [charttime(>6.0)] ∧ [storetime(<=0.0)] -> [value(>134.0)]}
+{ [hadm_id(<=0.0)] ∧ [charttime(>7.0)] -> [value(<=0.0)]}
+{ [stay_id(<=0.0)] ∧ [charttime(>7.0)] -> [itemid(<=0.0)]}
+{ [charttime(<=0.0)] ∧ [storetime(>8.0)] -> [valueuom(>0.0)]}
+{ [charttime(>6.0)] ∧ [storetime(<=0.0)] -> [valueuom(>0.0)]}
+{ [hadm_id(<=0.0)] ∧ [storetime(>8.0)] -> [valueuom(>0.0)]}
+{ [subject_id(>2316.0)] ∧ [storetime(<=0.0)] -> [itemid(>950.0)]}
+{ [subject_id(>2316.0)] ∧ [storetime(>9.0)] -> [itemid(>950.0)]}
+{ [stay_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>6.0)] -> [subject_id(>2396.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [storetime(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [storetime(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [storetime(>9.0)] -> [value(>134.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [charttime(>6.0)] -> [value(>134.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [storetime(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [storetime(>9.0)]}
+{ [stay_id(<=0.0)] ∧ [storetime(>8.0)] -> [charttime(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [caregiver_id(<=0.0)] -> [charttime(>7.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [storetime(>9.0)]}
+{ [subject_id(>2316.0)] ∧ [hadm_id(<=0.0)] -> [itemid(>950.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [charttime(>6.0)] -> [value(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [valueuom(>0.0)]}
+{ [stay_id(<=0.0)] ∧ [storetime(>8.0)] -> [itemid(>950.0)]}
+{ [hadm_id(<=0.0)] ∧ [storetime(>8.0)] -> [charttime(>7.0)]}
+{ [subject_id(>2316.0)] ∧ [caregiver_id(<=0.0)] -> [storetime(<=0.0)]}
+{ [valueuom(>0.0)] -> [itemid(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [caregiver_id(<=0.0)]}
+{ [stay_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [itemid(>950.0)]}
+{ [valueuom(>0.0)] -> [value(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [storetime(>8.0)] -> [charttime(<=0.0)]}
+{ [itemid(<=0.0)] ∧ [charttime(<=0.0)] -> [caregiver_id(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(>949.0)] -> [storetime(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [itemid(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [hadm_id(<=0.0)] -> [storetime(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [caregiver_id(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [charttime(>7.0)]}
+{ [subject_id(>2316.0)] ∧ [charttime(<=0.0)] -> [storetime(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(<=0.0)] -> [charttime(>7.0)]}
+{ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [itemid(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [charttime(>7.0)] -> [caregiver_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>7.0)] -> [stay_id(<=0.0)]}
+{ [charttime(<=0.0)] ∧ [storetime(>8.0)] -> [itemid(<=0.0)]}
+{ [charttime(>6.0)] ∧ [storetime(<=0.0)] -> [itemid(<=0.0)]}
+{ [itemid(>949.0)] ∧ [storetime(>9.0)] -> [charttime(>6.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [storetime(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [storetime(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(<=0.0)] -> [hadm_id(<=0.0)]}
+{ [charttime(<=0.0)] -> [valueuom(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [caregiver_id(<=0.0)] -> [value(<=0.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [caregiver_id(<=0.0)]}
+{ [stay_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [storetime(<=0.0)]}
+{ [stay_id(<=0.0)] ∧ [storetime(>8.0)] -> [value(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [value(>134.0)]}
+{ [stay_id(<=0.0)] -> [hadm_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>7.0)] -> [hadm_id(<=0.0)]}
+{ [itemid(<=0.0)] ∧ [charttime(<=0.0)] -> [value(>134.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [storetime(>8.0)] -> [stay_id(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(>949.0)] -> [storetime(>9.0)]}
+{ [stay_id(<=0.0)] ∧ [charttime(>7.0)] -> [value(>134.0)]}
+{ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] ∧ [storetime(>8.0)] -> [itemid(>950.0)]}
+{ [subject_id(>2316.0)] ∧ [hadm_id(<=0.0)] -> [caregiver_id(<=0.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [charttime(>6.0)] -> [storetime(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [hadm_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [storetime(>8.0)] -> [charttime(<=0.0)]}
+{ [stay_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>6.0)] -> [storetime(>9.0)]}
+{ [valueuom(>0.0)] -> [subject_id(>2396.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [storetime(>8.0)] -> [charttime(<=0.0)]}
+{ [charttime(<=0.0)] ∧ [storetime(>8.0)] -> [caregiver_id(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [charttime(>7.0)] -> [subject_id(>2396.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [subject_id(>2396.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [valueuom(>0.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [charttime(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [charttime(>7.0)] -> [itemid(<=0.0)]}
+{ [itemid(>949.0)] ∧ [value(<=0.0)] ∧ [charttime(<=0.0)] -> [storetime(>9.0)]}
+{ [valueuom(>0.0)] -> [subject_id(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [storetime(>9.0)] -> [valueuom(>0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [stay_id(<=0.0)] -> [caregiver_id(>29635.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [subject_id(>2396.0)]}
+{ [hadm_id(<=0.0)] ∧ [charttime(>7.0)] -> [stay_id(>8560176.0)]}
+{ [hadm_id(<=0.0)] ∧ [storetime(>8.0)] -> [charttime(<=0.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [caregiver_id(>29635.0)]}
+{ [subject_id(>2316.0)] ∧ [hadm_id(<=0.0)] -> [charttime(>7.0)]}
+{ [subject_id(>2396.0)] ∧ [charttime(>7.0)] -> [storetime(>9.0)]}
+{ [caregiver_id(>29122.0)] ∧ [storetime(<=0.0)] -> [charttime(>7.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [subject_id(<=0.0)]}
+{ [itemid(<=0.0)] ∧ [charttime(<=0.0)] -> [stay_id(>8560176.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [storetime(>8.0)] -> [value(>134.0)]}
+{ [subject_id(>2316.0)] ∧ [caregiver_id(<=0.0)] -> [itemid(>950.0)]}
+{ [hadm_id(>8733547.0)] ∧ [itemid(<=0.0)] -> [subject_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>7.0)] -> [storetime(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [storetime(<=0.0)] -> [subject_id(>2396.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [storetime(>9.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [hadm_id(>8733547.0)]}
+{ [hadm_id(>8733547.0)] ∧ [caregiver_id(<=0.0)] -> [storetime(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [stay_id(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [storetime(<=0.0)] -> [itemid(<=0.0)]}
+{ [subject_id(>2396.0)] ∧ [charttime(>7.0)] -> [stay_id(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(<=0.0)] -> [stay_id(>8560176.0)]}
+{ [stay_id(>8560176.0)] ∧ [itemid(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [hadm_id(>8733547.0)]}
+{ [subject_id(>2316.0)] ∧ [hadm_id(<=0.0)] -> [storetime(>9.0)]}
+{ [stay_id(<=0.0)] ∧ [storetime(>8.0)] -> [valueuom(>0.0)]}
+{ [stay_id(>8348488.0)] ∧ [caregiver_id(<=0.0)] -> [valueuom(>0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [caregiver_id(>29122.0)] ∧ [value(<=0.0)] -> [charttime(<=0.0)]}
+{ [stay_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [caregiver_id(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [charttime(<=0.0)] -> [itemid(>950.0)]}
+{ [hadm_id(>8733547.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [charttime(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [storetime(>8.0)] -> [stay_id(>8560176.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [stay_id(>8560176.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [charttime(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [stay_id(>8348488.0)] -> [storetime(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [stay_id(<=0.0)] -> [itemid(<=0.0)]}
+{ [stay_id(<=0.0)] ∧ [charttime(>7.0)] -> [itemid(>950.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [stay_id(>8560176.0)]}
+{ [valueuom(>0.0)] -> [caregiver_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [storetime(>9.0)] -> [hadm_id(<=0.0)]}
+{ [stay_id(>8348488.0)] ∧ [caregiver_id(<=0.0)] -> [subject_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [storetime(>9.0)] -> [caregiver_id(<=0.0)]}
+{ [subject_id(>2396.0)] ∧ [hadm_id(>8733547.0)] -> [itemid(>950.0)]}
+{ [hadm_id(<=0.0)] ∧ [charttime(>7.0)] -> [caregiver_id(>29635.0)]}
+{ [itemid(>949.0)] ∧ [value(<=0.0)] ∧ [storetime(<=0.0)] -> [valueuom(>0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [caregiver_id(>29122.0)] ∧ [value(<=0.0)] -> [storetime(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [stay_id(<=0.0)] -> [charttime(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(>949.0)] -> [charttime(>7.0)]}
+{ [subject_id(>2316.0)] ∧ [storetime(<=0.0)] -> [caregiver_id(>29635.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [subject_id(>2396.0)]}
+{ [hadm_id(>8733547.0)] ∧ [itemid(<=0.0)] -> [caregiver_id(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [stay_id(>8348488.0)] -> [storetime(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [caregiver_id(>29122.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [stay_id(>8560176.0)]}
+{ [hadm_id(>8733547.0)] ∧ [stay_id(<=0.0)] -> [charttime(>7.0)]}
+{ [subject_id(>2316.0)] ∧ [caregiver_id(>29122.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [itemid(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [hadm_id(<=0.0)] -> [caregiver_id(>29635.0)]}
+{ [hadm_id(>8733547.0)] ∧ [caregiver_id(>29122.0)] ∧ [value(<=0.0)] -> [storetime(>9.0)]}
+{ [caregiver_id(<=0.0)] ∧ [storetime(>9.0)] -> [subject_id(<=0.0)]}
+{ [valueuom(>0.0)] -> [hadm_id(<=0.0)]}
+{ [value(<=0.0)] ∧ [charttime(<=0.0)] ∧ [storetime(<=0.0)] -> [stay_id(>8560176.0)]}
+{ [charttime(<=0.0)] ∧ [storetime(>8.0)] -> [subject_id(>2396.0)]}
+{ [subject_id(>2316.0)] ∧ [stay_id(>8348488.0)] -> [charttime(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(>949.0)] -> [hadm_id(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [stay_id(<=0.0)] -> [charttime(<=0.0)]}
+{ [value(>128.0)] -> [valueuom(<=0.0)]}
+{ [charttime(>6.0)] ∧ [storetime(<=0.0)] -> [subject_id(>2396.0)]}
+{ [stay_id(<=0.0)] ∧ [charttime(>7.0)] -> [caregiver_id(>29635.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] -> [stay_id(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [storetime(>9.0)] -> [subject_id(>2396.0)]}
+{ [subject_id(>2316.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [stay_id(>8560176.0)]}
+{ [subject_id(<=0.0)] ∧ [hadm_id(>8733547.0)] -> [itemid(>950.0)]}
+{ [value(<=0.0)] ∧ [charttime(<=0.0)] ∧ [storetime(<=0.0)] -> [caregiver_id(>29635.0)]}
+{ [stay_id(>8348488.0)] ∧ [itemid(>949.0)] -> [caregiver_id(>29635.0)]}
+{ [stay_id(>8560176.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [hadm_id(<=0.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [hadm_id(>8733547.0)]}
+{ [hadm_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>6.0)] -> [valueuom(>0.0)]}
+{ [hadm_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>6.0)] -> [subject_id(>2396.0)]}
+{ [stay_id(>8348488.0)] ∧ [charttime(<=0.0)] -> [valueuom(>0.0)]}
+{ [stay_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>6.0)] -> [value(>134.0)]}
+{ [stay_id(>8348488.0)] ∧ [itemid(>949.0)] -> [storetime(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [valueuom(>0.0)]}
+{ [subject_id(>2316.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [caregiver_id(>29635.0)]}
+{ [subject_id(<=0.0)] ∧ [hadm_id(>8733547.0)] -> [storetime(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [storetime(>9.0)] -> [value(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [stay_id(>8560176.0)]}
+{ [stay_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [storetime(>9.0)]}
+{ [itemid(<=0.0)] ∧ [charttime(<=0.0)] -> [storetime(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [caregiver_id(<=0.0)] -> [hadm_id(>8733547.0)]}
+{ [stay_id(<=0.0)] ∧ [storetime(>8.0)] -> [hadm_id(>8733547.0)]}
+{ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [stay_id(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [stay_id(<=0.0)] -> [itemid(>950.0)]}
+{ [subject_id(>2396.0)] ∧ [hadm_id(>8733547.0)] -> [charttime(>7.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>7.0)] -> [stay_id(>8560176.0)]}
+{ [hadm_id(<=0.0)] ∧ [stay_id(>8348488.0)] -> [storetime(>9.0)]}
+{ [hadm_id(>8733547.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [stay_id(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [subject_id(>2396.0)]}
+{ [subject_id(>2316.0)] ∧ [storetime(>9.0)] -> [hadm_id(>8733547.0)]}
+{ [stay_id(>8348488.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [storetime(>9.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [storetime(<=0.0)]}
+{ [subject_id(>2396.0)] ∧ [caregiver_id(>29122.0)] -> [itemid(>950.0)]}
+{ [subject_id(>2396.0)] ∧ [hadm_id(>8733547.0)] -> [storetime(>9.0)]}
+{ [hadm_id(>8733547.0)] ∧ [itemid(>949.0)] -> [stay_id(>8560176.0)]}
+{ [value(<=0.0)] ∧ [charttime(<=0.0)] -> [caregiver_id(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(>949.0)] -> [caregiver_id(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [itemid(<=0.0)] -> [valueuom(>0.0)]}
+{ [stay_id(>8348488.0)] ∧ [storetime(<=0.0)] -> [value(>134.0)]}
+{ [subject_id(>2316.0)] ∧ [hadm_id(<=0.0)] -> [itemid(<=0.0)]}
+{ [stay_id(>8348488.0)] -> [valueuom(<=0.0)]}
+{ [caregiver_id(>29122.0)] ∧ [charttime(<=0.0)] -> [hadm_id(>8733547.0)]}
+{ [subject_id(>2396.0)] ∧ [charttime(>7.0)] -> [storetime(<=0.0)]}
+{ [stay_id(>8348488.0)] ∧ [storetime(<=0.0)] -> [charttime(>7.0)]}
+{ [stay_id(<=0.0)] ∧ [charttime(>7.0)] -> [storetime(>9.0)]}
+{ [hadm_id(>8733547.0)] ∧ [stay_id(<=0.0)] -> [storetime(>9.0)]}
+{ [itemid(>949.0)] ∧ [value(>128.0)] ∧ [charttime(<=0.0)] ∧ [storetime(<=0.0)] -> [stay_id(>8560176.0)]}
+{ [subject_id(>2316.0)] ∧ [stay_id(>8348488.0)] -> [itemid(>950.0)]}
+{ [subject_id(>2316.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [storetime(>8.0)]}
+{ [subject_id(<=0.0)] ∧ [hadm_id(>8733547.0)] -> [charttime(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [caregiver_id(>29122.0)] ∧ [charttime(>7.0)] ∧ [storetime(>8.0)] -> [value(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [caregiver_id(<=0.0)] -> [stay_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [storetime(>8.0)] -> [stay_id(>8560176.0)]}
+{ [subject_id(>2316.0)] ∧ [charttime(<=0.0)] -> [hadm_id(>8733547.0)]}
+{ [caregiver_id(>29122.0)] ∧ [storetime(<=0.0)] -> [value(>134.0)]}
+{ [stay_id(>8560176.0)] ∧ [itemid(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [subject_id(>2396.0)]}
+{ [subject_id(>2316.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [storetime(>9.0)]}
+{ [hadm_id(>8733547.0)] ∧ [itemid(<=0.0)] -> [subject_id(>2396.0)]}
+{ [caregiver_id(>29122.0)] -> [valueuom(<=0.0)]}
+{ [stay_id(>8348488.0)] ∧ [itemid(>949.0)] -> [storetime(>9.0)]}
+{ [hadm_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [valueuom(>0.0)]}
+{ [subject_id(>2316.0)] ∧ [storetime(<=0.0)] -> [value(>134.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>6.0)] -> [itemid(<=0.0)]}
+{ [subject_id(>2316.0)] -> [valueuom(<=0.0)]}
+{ [itemid(<=0.0)] ∧ [value(<=0.0)] ∧ [storetime(>9.0)] -> [charttime(>6.0)]}
+{ [caregiver_id(>29122.0)] ∧ [storetime(<=0.0)] -> [stay_id(>8560176.0)]}
+{ [hadm_id(>8733547.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [caregiver_id(<=0.0)]}
+{ [caregiver_id(>29122.0)] ∧ [storetime(<=0.0)] -> [itemid(<=0.0)]}
+{ [subject_id(>2396.0)] ∧ [caregiver_id(>29122.0)] -> [stay_id(<=0.0)]}
+{ [stay_id(>8560176.0)] ∧ [storetime(>9.0)] -> [charttime(>7.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [storetime(>9.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [caregiver_id(>29635.0)]}
+{ [stay_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [caregiver_id(>29635.0)]}
+{ [stay_id(<=0.0)] -> [valueuom(<=0.0)]}
+{ [stay_id(>8560176.0)] ∧ [itemid(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [subject_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [storetime(>8.0)] -> [caregiver_id(>29635.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(<=0.0)] -> [caregiver_id(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(>949.0)] -> [caregiver_id(>29635.0)]}
+{ [stay_id(<=0.0)] -> [subject_id(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(>949.0)] -> [value(>134.0)]}
+{ [stay_id(>8560176.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [caregiver_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [stay_id(>8348488.0)] -> [hadm_id(>8733547.0)]}
+{ [itemid(>949.0)] ∧ [value(>128.0)] ∧ [charttime(<=0.0)] ∧ [storetime(<=0.0)] -> [caregiver_id(>29635.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [stay_id(>8560176.0)]}
+{ [hadm_id(>8733547.0)] ∧ [caregiver_id(>29122.0)] ∧ [charttime(>6.0)] ∧ [storetime(>8.0)] -> [value(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [storetime(>8.0)] -> [stay_id(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [hadm_id(<=0.0)] -> [stay_id(>8560176.0)]}
+{ [stay_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [itemid(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [stay_id(<=0.0)] -> [storetime(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [hadm_id(<=0.0)] -> [value(>134.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [storetime(>8.0)] -> [value(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [storetime(>8.0)] -> [charttime(>7.0)]}
+{ [subject_id(<=0.0)] ∧ [hadm_id(>8733547.0)] -> [stay_id(<=0.0)]}
+{ [stay_id(>8348488.0)] ∧ [itemid(>949.0)] -> [charttime(>7.0)]}
+{ [stay_id(>8560176.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [hadm_id(>8733547.0)]}
+{ [subject_id(<=0.0)] ∧ [stay_id(>8348488.0)] -> [value(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [storetime(>9.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [storetime(>8.0)] -> [hadm_id(>8733547.0)]}
+{ [hadm_id(>8733547.0)] ∧ [caregiver_id(>29122.0)] ∧ [value(<=0.0)] -> [charttime(>7.0)]}
+{ [itemid(>949.0)] ∧ [value(<=0.0)] ∧ [storetime(>9.0)] -> [charttime(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>7.0)] -> [storetime(>9.0)]}
+{ [hadm_id(>8733547.0)] ∧ [itemid(>949.0)] -> [caregiver_id(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [stay_id(>8348488.0)] -> [charttime(>7.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [charttime(>6.0)] -> [storetime(>9.0)]}
+{ [subject_id(>2316.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [itemid(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [stay_id(>8348488.0)] -> [charttime(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(>949.0)] -> [stay_id(>8560176.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [charttime(>7.0)]}
+{ [hadm_id(>8733547.0)] -> [subject_id(>2316.0)]}
+{ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] ∧ [storetime(>8.0)] -> [hadm_id(>8733547.0)]}
+{ [subject_id(>2316.0)] ∧ [storetime(<=0.0)] -> [value(<=0.0)]}
+{ [itemid(>949.0)] ∧ [value(<=0.0)] ∧ [charttime(<=0.0)] -> [storetime(<=0.0)]}
+{ [stay_id(<=0.0)] ∧ [caregiver_id(>29122.0)] ∧ [charttime(>6.0)] -> [value(>134.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [storetime(>8.0)] -> [value(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [itemid(>949.0)] -> [stay_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [storetime(>9.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [valueuom(>0.0)]}
+{ [subject_id(>2396.0)] ∧ [charttime(>7.0)] -> [value(>134.0)]}
+{ [stay_id(>8348488.0)] ∧ [caregiver_id(<=0.0)] -> [storetime(<=0.0)]}
+{ [stay_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>6.0)] -> [itemid(<=0.0)]}
+{ [stay_id(>8560176.0)] ∧ [storetime(>9.0)] -> [hadm_id(>8733547.0)]}
+{ [hadm_id(>8733547.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [itemid(>950.0)]}
+{ [hadm_id(>8733547.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [itemid(>950.0)]}
+{ [subject_id(<=0.0)] ∧ [stay_id(>8348488.0)] -> [value(>134.0)]}
+{ [itemid(>949.0)] ∧ [value(<=0.0)] ∧ [storetime(<=0.0)] -> [caregiver_id(>29635.0)]}
+{ [charttime(<=0.0)] -> [hadm_id(<=0.0)]}
+{ [stay_id(>8348488.0)] ∧ [charttime(<=0.0)] -> [itemid(>950.0)]}
+{ [stay_id(>8348488.0)] ∧ [itemid(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [storetime(>8.0)]}
+{ [stay_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>6.0)] -> [hadm_id(>8733547.0)]}
+{ [subject_id(>2316.0)] ∧ [caregiver_id(<=0.0)] -> [hadm_id(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [storetime(>9.0)] -> [value(>134.0)]}
+{ [subject_id(>2316.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [caregiver_id(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [stay_id(<=0.0)] -> [itemid(>950.0)]}
+{ [itemid(>950.0)] ∧ [value(>128.0)] ∧ [storetime(>9.0)] -> [charttime(>7.0)]}
+{ [hadm_id(>8733547.0)] ∧ [caregiver_id(<=0.0)] -> [storetime(>9.0)]}
+{ [hadm_id(>8733547.0)] ∧ [storetime(>9.0)] -> [caregiver_id(<=0.0)]}
+{ [caregiver_id(<=0.0)] -> [valueuom(<=0.0)]}
+{ [itemid(<=0.0)] ∧ [charttime(<=0.0)] -> [subject_id(>2396.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [valueuom(>0.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [subject_id(>2396.0)]}
+{ [hadm_id(>8733547.0)] ∧ [storetime(<=0.0)] -> [charttime(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [hadm_id(>8733547.0)] -> [charttime(>7.0)]}
+{ [stay_id(>8560176.0)] ∧ [itemid(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [valueuom(>0.0)]}
+{ [hadm_id(<=0.0)] ∧ [stay_id(>8348488.0)] -> [itemid(>950.0)]}
+{ [itemid(>949.0)] ∧ [value(>128.0)] ∧ [charttime(<=0.0)] ∧ [storetime(<=0.0)] -> [subject_id(>2396.0)]}
+{ [subject_id(>2316.0)] ∧ [stay_id(<=0.0)] -> [caregiver_id(<=0.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [value(>134.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [valueuom(>0.0)]}
+{ [subject_id(>2316.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [stay_id(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [storetime(<=0.0)]}
+{ [subject_id(>2396.0)] ∧ [hadm_id(>8733547.0)] -> [storetime(<=0.0)]}
+{ [subject_id(>2396.0)] ∧ [charttime(>7.0)] -> [valueuom(>0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [caregiver_id(<=0.0)] -> [itemid(>950.0)]}
+{ [hadm_id(<=0.0)] ∧ [storetime(>8.0)] -> [itemid(>950.0)]}
+{ [stay_id(>8560176.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [subject_id(<=0.0)]}
+{ [stay_id(>8560176.0)] ∧ [storetime(>9.0)] -> [charttime(<=0.0)]}
+{ [stay_id(>8348488.0)] ∧ [value(<=0.0)] ∧ [storetime(>9.0)] -> [caregiver_id(>29635.0)]}
+{ [hadm_id(>8733547.0)] ∧ [storetime(>9.0)] -> [stay_id(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [charttime(>6.0)] -> [stay_id(>8560176.0)]}
+{ [charttime(>6.0)] ∧ [storetime(<=0.0)] -> [itemid(>950.0)]}
+{ [charttime(<=0.0)] ∧ [storetime(>8.0)] -> [itemid(>950.0)]}
+{ [charttime(<=0.0)] -> [stay_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [storetime(>9.0)] -> [value(>134.0)]}
+{ [subject_id(>2316.0)] ∧ [charttime(<=0.0)] -> [value(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [storetime(<=0.0)] -> [itemid(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [value(>134.0)]}
+{ [subject_id(>2396.0)] ∧ [caregiver_id(>29122.0)] -> [valueuom(>0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [storetime(>8.0)] -> [valueuom(>0.0)]}
+{ [subject_id(<=0.0)] ∧ [storetime(>9.0)] -> [valueuom(>0.0)]}
+{ [stay_id(<=0.0)] ∧ [storetime(>8.0)] -> [subject_id(>2396.0)]}
+{ [subject_id(>2316.0)] ∧ [caregiver_id(<=0.0)] -> [itemid(<=0.0)]}
+{ [subject_id(>2396.0)] ∧ [caregiver_id(>29122.0)] -> [charttime(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [hadm_id(<=0.0)] -> [value(<=0.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [value(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [caregiver_id(>29122.0)] ∧ [value(<=0.0)] -> [itemid(>950.0)]}
+{ [hadm_id(>8733547.0)] ∧ [storetime(<=0.0)] -> [value(>134.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [caregiver_id(>29635.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [caregiver_id(<=0.0)]}
+{ [stay_id(>8348488.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [caregiver_id(>29635.0)]}
+{ [subject_id(>2396.0)] ∧ [caregiver_id(>29122.0)] -> [hadm_id(>8733547.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [charttime(>6.0)] -> [value(>134.0)]}
+{ [hadm_id(>8733547.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [storetime(>9.0)]}
+{ [stay_id(<=0.0)] ∧ [charttime(>7.0)] -> [subject_id(>2396.0)]}
+{ [hadm_id(>8733547.0)] ∧ [storetime(<=0.0)] -> [stay_id(>8560176.0)]}
+{ [hadm_id(>8733547.0)] ∧ [stay_id(>8348488.0)] -> [caregiver_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [stay_id(>8348488.0)] -> [valueuom(>0.0)]}
+{ [stay_id(>8560176.0)] ∧ [storetime(>9.0)] -> [value(>134.0)]}
+{ [stay_id(<=0.0)] ∧ [charttime(>7.0)] -> [storetime(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [valueuom(>0.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [subject_id(>2396.0)]}
+{ [hadm_id(>8733547.0)] ∧ [caregiver_id(<=0.0)] -> [subject_id(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [hadm_id(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [storetime(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>6.0)] -> [value(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] ∧ [storetime(>8.0)] -> [itemid(<=0.0)]}
+{ [itemid(>949.0)] ∧ [value(<=0.0)] ∧ [charttime(<=0.0)] -> [caregiver_id(>29635.0)]}
+{ [subject_id(>2396.0)] ∧ [caregiver_id(>29122.0)] -> [itemid(<=0.0)]}
+{ [subject_id(>2396.0)] ∧ [caregiver_id(>29122.0)] -> [value(>134.0)]}
+{ [caregiver_id(>29122.0)] ∧ [itemid(>950.0)] ∧ [storetime(>9.0)] -> [charttime(>7.0)]}
+{ [subject_id(>2316.0)] ∧ [caregiver_id(<=0.0)] -> [stay_id(<=0.0)]}
+{ [subject_id(>2396.0)] ∧ [caregiver_id(>29122.0)] -> [stay_id(>8560176.0)]}
+{ [hadm_id(>8733547.0)] ∧ [charttime(<=0.0)] -> [stay_id(>8560176.0)]}
+{ [subject_id(>2316.0)] ∧ [storetime(>9.0)] -> [valueuom(>0.0)]}
+{ [subject_id(>2396.0)] ∧ [charttime(>7.0)] -> [hadm_id(>8733547.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [storetime(>8.0)] -> [caregiver_id(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [stay_id(<=0.0)] -> [storetime(>9.0)]}
+{ [hadm_id(>8733547.0)] ∧ [storetime(<=0.0)] -> [valueuom(>0.0)]}
+{ [subject_id(>2316.0)] ∧ [caregiver_id(>29122.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [storetime(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [stay_id(>8348488.0)] -> [valueuom(>0.0)]}
+{ [storetime(<=0.0)] -> [stay_id(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [stay_id(>8348488.0)] -> [value(>134.0)]}
+{ [subject_id(>2396.0)] ∧ [hadm_id(>8733547.0)] -> [caregiver_id(>29635.0)]}
+{ [subject_id(>2396.0)] ∧ [charttime(>7.0)] -> [value(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [charttime(>7.0)] -> [itemid(>950.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [storetime(>8.0)] -> [value(>134.0)]}
+{ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] ∧ [storetime(>8.0)] -> [stay_id(>8560176.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [value(<=0.0)]}
+{ [charttime(>6.0)] -> [valueuom(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [charttime(<=0.0)] -> [itemid(<=0.0)]}
+{ [itemid(>949.0)] ∧ [value(<=0.0)] ∧ [storetime(>9.0)] -> [charttime(>7.0)]}
+{ [subject_id(<=0.0)] ∧ [storetime(>9.0)] -> [value(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [charttime(>6.0)] -> [caregiver_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [caregiver_id(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [caregiver_id(>29635.0)]}
+{ [subject_id(>2396.0)] ∧ [charttime(>7.0)] -> [stay_id(>8560176.0)]}
+{ [storetime(<=0.0)] -> [subject_id(<=0.0)]}
+{ [stay_id(>8348488.0)] ∧ [caregiver_id(<=0.0)] -> [subject_id(>2396.0)]}
+{ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] ∧ [storetime(>8.0)] -> [stay_id(<=0.0)]}
+{ [subject_id(>2396.0)] ∧ [caregiver_id(>29122.0)] -> [value(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [hadm_id(<=0.0)] -> [charttime(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [charttime(>7.0)] -> [storetime(>9.0)]}
+{ [subject_id(>2316.0)] ∧ [caregiver_id(>29122.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [itemid(>950.0)]}
+{ [caregiver_id(<=0.0)] ∧ [storetime(>9.0)] -> [charttime(>7.0)]}
+{ [hadm_id(>8733547.0)] ∧ [charttime(<=0.0)] -> [valueuom(>0.0)]}
+{ [stay_id(>8560176.0)] ∧ [storetime(>9.0)] -> [valueuom(>0.0)]}
+{ [itemid(>949.0)] ∧ [value(<=0.0)] ∧ [storetime(>9.0)] -> [caregiver_id(>29635.0)]}
+{ [subject_id(>2316.0)] ∧ [caregiver_id(>29122.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [itemid(>950.0)]}
+{ [hadm_id(>8733547.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [subject_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [hadm_id(>8733547.0)] -> [caregiver_id(>29635.0)]}
+{ [subject_id(>2316.0)] ∧ [storetime(<=0.0)] -> [charttime(>7.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [charttime(>6.0)] -> [valueuom(>0.0)]}
+{ [hadm_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>6.0)] -> [value(>134.0)]}
+{ [hadm_id(>8733547.0)] ∧ [itemid(>949.0)] -> [storetime(>9.0)]}
+{ [hadm_id(>8733547.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [subject_id(<=0.0)]}
+{ [itemid(>949.0)] ∧ [value(<=0.0)] ∧ [storetime(<=0.0)] -> [subject_id(>2396.0)]}
+{ [stay_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>6.0)] -> [valueuom(>0.0)]}
+{ [value(<=0.0)] ∧ [charttime(<=0.0)] ∧ [storetime(<=0.0)] -> [itemid(>950.0)]}
+{ [hadm_id(>8733547.0)] ∧ [itemid(>949.0)] -> [charttime(<=0.0)]}
+{ [stay_id(>8560176.0)] ∧ [storetime(>9.0)] -> [caregiver_id(<=0.0)]}
+{ [subject_id(>2396.0)] ∧ [charttime(>7.0)] -> [itemid(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [stay_id(>8348488.0)] -> [value(>134.0)]}
+{ [stay_id(>8560176.0)] ∧ [storetime(>9.0)] -> [hadm_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [storetime(>9.0)] -> [stay_id(>8560176.0)]}
+{ [stay_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [subject_id(>2396.0)]}
+{ [charttime(<=0.0)] -> [subject_id(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [storetime(<=0.0)] -> [value(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(<=0.0)] -> [storetime(>9.0)]}
+{ [subject_id(>2316.0)] ∧ [stay_id(<=0.0)] -> [itemid(<=0.0)]}
+{ [stay_id(>8348488.0)] ∧ [charttime(<=0.0)] -> [caregiver_id(<=0.0)]}
+{ [stay_id(>8560176.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [itemid(>950.0)]}
+{ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] ∧ [storetime(>8.0)] -> [hadm_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] -> [hadm_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [stay_id(>8348488.0)] -> [charttime(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [stay_id(>8348488.0)] -> [value(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [stay_id(>8348488.0)] -> [hadm_id(>8733547.0)]}
+{ [hadm_id(>8733547.0)] ∧ [stay_id(>8348488.0)] -> [storetime(>9.0)]}
+{ [subject_id(>2316.0)] ∧ [stay_id(>8348488.0)] -> [itemid(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [storetime(>8.0)] -> [caregiver_id(>29635.0)]}
+{ [subject_id(>2316.0)] ∧ [stay_id(<=0.0)] -> [hadm_id(>8733547.0)]}
+{ [caregiver_id(>29122.0)] ∧ [charttime(<=0.0)] -> [itemid(>950.0)]}
+{ [subject_id(>2316.0)] ∧ [caregiver_id(<=0.0)] -> [charttime(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(>949.0)] -> [stay_id(<=0.0)]}
+{ [stay_id(>8348488.0)] ∧ [caregiver_id(>29122.0)] ∧ [value(>128.0)] ∧ [charttime(>7.0)] ∧ [storetime(>8.0)] -> [itemid(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [caregiver_id(>29122.0)] ∧ [charttime(>7.0)] ∧ [storetime(>8.0)] -> [itemid(>950.0)]}
+{ [subject_id(>2396.0)] ∧ [value(>128.0)] ∧ [charttime(>6.0)] -> [storetime(>8.0)]}
+{ [storetime(>8.0)] -> [valueuom(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [storetime(>9.0)] -> [charttime(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [storetime(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [storetime(>9.0)] -> [hadm_id(>8733547.0)]}
+{ [subject_id(>2316.0)] ∧ [storetime(<=0.0)] -> [valueuom(>0.0)]}
+{ [stay_id(>8560176.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [charttime(<=0.0)]}
+{ [hadm_id(<=0.0)] -> [valueuom(<=0.0)]}
+{ [stay_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [valueuom(>0.0)]}
+{ [subject_id(>2396.0)] ∧ [charttime(>7.0)] -> [hadm_id(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [caregiver_id(>29635.0)]}
+{ [hadm_id(>8733547.0)] ∧ [stay_id(<=0.0)] -> [caregiver_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [storetime(>8.0)] -> [itemid(>950.0)]}
+{ [hadm_id(>8733547.0)] ∧ [storetime(>9.0)] -> [charttime(<=0.0)]}
+{ [stay_id(>8560176.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [itemid(>950.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(>949.0)] -> [charttime(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>7.0)] -> [itemid(>950.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(>949.0)] -> [valueuom(>0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [storetime(>9.0)] -> [valueuom(>0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [caregiver_id(>29122.0)] ∧ [charttime(>6.0)] ∧ [storetime(>8.0)] -> [subject_id(>2396.0)]}
+{ [hadm_id(>8733547.0)] ∧ [itemid(>949.0)] -> [subject_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [hadm_id(>8733547.0)] -> [value(<=0.0)]}
+{ [stay_id(>8560176.0)] ∧ [itemid(<=0.0)] ∧ [value(<=0.0)] -> [caregiver_id(>29635.0)]}
+{ [hadm_id(<=0.0)] -> [subject_id(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [storetime(>9.0)] -> [subject_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [storetime(>9.0)] -> [itemid(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [storetime(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [caregiver_id(<=0.0)] -> [valueuom(>0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [itemid(<=0.0)] -> [caregiver_id(>29635.0)]}
+{ [subject_id(>2316.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [itemid(>950.0)]}
+{ [valueuom(>0.0)] -> [caregiver_id(>29635.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [charttime(>7.0)]}
+{ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [hadm_id(>8733547.0)]}
+{ [subject_id(>2316.0)] ∧ [stay_id(<=0.0)] -> [value(>134.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [charttime(>6.0)] -> [storetime(>9.0)]}
+{ [stay_id(>8348488.0)] ∧ [storetime(<=0.0)] -> [itemid(>950.0)]}
+{ [itemid(>949.0)] -> [valueuom(<=0.0)]}
+{ [caregiver_id(>29122.0)] ∧ [storetime(<=0.0)] -> [itemid(>950.0)]}
+{ [subject_id(>2316.0)] ∧ [storetime(>9.0)] -> [stay_id(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [charttime(<=0.0)] -> [valueuom(>0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [stay_id(>8348488.0)] -> [itemid(<=0.0)]}
+{ [subject_id(>2396.0)] ∧ [charttime(>7.0)] -> [caregiver_id(<=0.0)]}
+{ [stay_id(>8560176.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [subject_id(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [hadm_id(<=0.0)] -> [valueuom(>0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [stay_id(>8560176.0)]}
+{ [stay_id(>8348488.0)] ∧ [storetime(<=0.0)] -> [hadm_id(>8733547.0)]}
+{ [subject_id(<=0.0)] ∧ [stay_id(>8348488.0)] -> [charttime(>7.0)]}
+{ [hadm_id(>8733547.0)] ∧ [itemid(<=0.0)] -> [storetime(>9.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [valueuom(>0.0)]}
+{ [itemid(<=0.0)] -> [valueuom(<=0.0)]}
+{ [storetime(<=0.0)] -> [valueuom(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [itemid(<=0.0)]}
+{ [stay_id(>8348488.0)] ∧ [caregiver_id(<=0.0)] -> [itemid(>950.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [stay_id(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [storetime(>9.0)] -> [charttime(>7.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [charttime(>6.0)] -> [caregiver_id(>29635.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(>949.0)] -> [stay_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [hadm_id(>8733547.0)] -> [value(>134.0)]}
+{ [subject_id(>2316.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [valueuom(>0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [stay_id(>8560176.0)]}
+{ [hadm_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>6.0)] -> [stay_id(>8560176.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [subject_id(<=0.0)]}
+{ [caregiver_id(>29122.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [charttime(>7.0)]}
+{ [stay_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>6.0)] -> [itemid(>950.0)]}
+{ [caregiver_id(<=0.0)] ∧ [storetime(>9.0)] -> [value(<=0.0)]}
+{ [value(<=0.0)] ∧ [charttime(<=0.0)] ∧ [storetime(<=0.0)] -> [subject_id(>2396.0)]}
+{ [stay_id(>8348488.0)] ∧ [itemid(>949.0)] -> [subject_id(>2396.0)]}
+{ [itemid(>949.0)] ∧ [value(<=0.0)] ∧ [storetime(>9.0)] -> [valueuom(>0.0)]}
+{ [subject_id(<=0.0)] ∧ [storetime(>9.0)] -> [charttime(>7.0)]}
+{ [valueuom(>0.0)] -> [storetime(>9.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [storetime(>8.0)] -> [hadm_id(<=0.0)]}
+{ [stay_id(>8348488.0)] ∧ [charttime(<=0.0)] -> [itemid(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [caregiver_id(>29635.0)]}
+{ [hadm_id(>8733547.0)] ∧ [stay_id(>8348488.0)] -> [value(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>6.0)] -> [storetime(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [hadm_id(<=0.0)] -> [stay_id(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [caregiver_id(>29122.0)] ∧ [charttime(>6.0)] -> [value(>134.0)]}
+{ [caregiver_id(<=0.0)] ∧ [storetime(>9.0)] -> [itemid(>950.0)]}
+{ [hadm_id(<=0.0)] ∧ [charttime(>6.0)] -> [stay_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [itemid(>950.0)]}
+{ [subject_id(>2396.0)] ∧ [caregiver_id(>29122.0)] -> [storetime(>9.0)]}
+{ [hadm_id(>8733547.0)] ∧ [charttime(<=0.0)] -> [storetime(>9.0)]}
+{ [hadm_id(<=0.0)] ∧ [storetime(>8.0)] -> [caregiver_id(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [caregiver_id(>29635.0)]}
+{ [value(<=0.0)] ∧ [storetime(<=0.0)] -> [itemid(<=0.0)]}
+{ [stay_id(>8348488.0)] ∧ [charttime(<=0.0)] -> [caregiver_id(>29635.0)]}
+{ [subject_id(>2316.0)] ∧ [stay_id(>8348488.0)] -> [caregiver_id(<=0.0)]}
+{ [charttime(>6.0)] ∧ [storetime(<=0.0)] -> [hadm_id(>8733547.0)]}
+{ [subject_id(>2396.0)] ∧ [hadm_id(>8733547.0)] -> [valueuom(>0.0)]}
+{ [charttime(<=0.0)] ∧ [storetime(>8.0)] -> [hadm_id(>8733547.0)]}
+{ [stay_id(>8560176.0)] ∧ [itemid(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [storetime(<=0.0)]}
+{ [valueuom(>0.0)] -> [charttime(>7.0)]}
+{ [hadm_id(>8733547.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [storetime(<=0.0)]}
+{ [stay_id(<=0.0)] ∧ [charttime(>7.0)] -> [valueuom(>0.0)]}
+{ [subject_id(>2316.0)] ∧ [charttime(<=0.0)] -> [caregiver_id(<=0.0)]}
+{ [stay_id(>8348488.0)] ∧ [itemid(>949.0)] -> [subject_id(<=0.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [subject_id(>2396.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(<=0.0)] -> [stay_id(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [subject_id(>2396.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(<=0.0)] -> [hadm_id(>8733547.0)]}
+{ [subject_id(>2316.0)] ∧ [storetime(<=0.0)] -> [hadm_id(>8733547.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [stay_id(>8560176.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [value(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [stay_id(>8348488.0)] -> [caregiver_id(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(<=0.0)] -> [charttime(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [stay_id(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [caregiver_id(>29122.0)] ∧ [value(<=0.0)] -> [subject_id(>2396.0)]}
+{ [subject_id(>2316.0)] ∧ [stay_id(<=0.0)] -> [value(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [charttime(>7.0)] -> [storetime(<=0.0)]}
+{ [caregiver_id(>29122.0)] ∧ [charttime(<=0.0)] -> [storetime(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [storetime(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [itemid(<=0.0)] -> [charttime(>7.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [storetime(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [stay_id(>8348488.0)] -> [hadm_id(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [storetime(>8.0)] -> [itemid(<=0.0)]}
+{ [stay_id(>8348488.0)] ∧ [storetime(>9.0)] -> [charttime(>6.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [charttime(>6.0)] -> [subject_id(>2396.0)]}
+{ [stay_id(<=0.0)] ∧ [charttime(>7.0)] -> [value(<=0.0)]}
+{ [stay_id(>8560176.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [hadm_id(>8733547.0)]}
+{ [stay_id(<=0.0)] ∧ [storetime(>8.0)] -> [value(>134.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [storetime(<=0.0)]}
+{ [value(<=0.0)] -> [valueuom(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [storetime(>8.0)] -> [valueuom(>0.0)]}
+{ [stay_id(>8560176.0)] ∧ [storetime(>9.0)] -> [subject_id(>2396.0)]}
+{ [caregiver_id(>29122.0)] ∧ [charttime(<=0.0)] -> [stay_id(>8560176.0)]}
+{ [hadm_id(<=0.0)] ∧ [storetime(>8.0)] -> [subject_id(>2396.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [value(>134.0)]}
+{ [caregiver_id(>29122.0)] ∧ [charttime(<=0.0)] -> [itemid(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [storetime(>9.0)]}
+{ [stay_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>6.0)] -> [value(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [storetime(>8.0)] -> [charttime(>7.0)]}
+{ [hadm_id(>8733547.0)] ∧ [caregiver_id(>29122.0)] ∧ [value(<=0.0)] -> [subject_id(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [storetime(>8.0)] -> [stay_id(>8560176.0)]}
+{ [subject_id(>2316.0)] ∧ [storetime(<=0.0)] -> [charttime(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [storetime(>9.0)] -> [caregiver_id(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] ∧ [storetime(>8.0)] -> [subject_id(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [hadm_id(>8733547.0)]}
+{ [hadm_id(>8733547.0)] ∧ [charttime(<=0.0)] -> [subject_id(>2396.0)]}
+{ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [hadm_id(<=0.0)]}
+{ [itemid(>949.0)] ∧ [value(>128.0)] ∧ [charttime(<=0.0)] ∧ [storetime(<=0.0)] -> [valueuom(>0.0)]}
+{ [subject_id(>2316.0)] ∧ [storetime(>9.0)] -> [hadm_id(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [storetime(>8.0)] -> [subject_id(>2396.0)]}
+{ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] ∧ [storetime(>8.0)] -> [subject_id(>2396.0)]}
+{ [hadm_id(>8733547.0)] ∧ [caregiver_id(<=0.0)] -> [itemid(<=0.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [storetime(>9.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [hadm_id(>8733547.0)]}
+{ [itemid(>949.0)] ∧ [charttime(<=0.0)] -> [caregiver_id(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [caregiver_id(<=0.0)] -> [value(>134.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(<=0.0)] -> [storetime(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [stay_id(>8348488.0)] -> [hadm_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] -> [hadm_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [stay_id(>8560176.0)]}
+{ [subject_id(>2396.0)] ∧ [hadm_id(>8733547.0)] -> [value(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [hadm_id(>8733547.0)] -> [valueuom(>0.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [charttime(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>6.0)] -> [itemid(<=0.0)]}
+{ [stay_id(>8348488.0)] ∧ [charttime(<=0.0)] -> [storetime(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [caregiver_id(<=0.0)] -> [storetime(>9.0)]}
+{ [itemid(<=0.0)] ∧ [charttime(<=0.0)] -> [hadm_id(>8733547.0)]}
+{ [stay_id(>8560176.0)] ∧ [storetime(>9.0)] -> [subject_id(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [itemid(>949.0)] -> [value(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [valueuom(>0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [caregiver_id(<=0.0)] -> [stay_id(>8560176.0)]}
+{ [hadm_id(<=0.0)] ∧ [stay_id(>8348488.0)] -> [subject_id(>2396.0)]}
+{ [itemid(>949.0)] ∧ [value(<=0.0)] ∧ [charttime(<=0.0)] -> [subject_id(>2396.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [stay_id(>8560176.0)]}
+{ [stay_id(>8348488.0)] ∧ [caregiver_id(<=0.0)] -> [value(>134.0)]}
+{ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] ∧ [storetime(>8.0)] -> [valueuom(>0.0)]}
+{ [stay_id(>8560176.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [hadm_id(<=0.0)]}
+{ [itemid(<=0.0)] ∧ [charttime(<=0.0)] -> [value(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [charttime(<=0.0)]}
+{ [stay_id(<=0.0)] ∧ [charttime(>7.0)] -> [hadm_id(>8733547.0)]}
+{ [subject_id(>2316.0)] ∧ [storetime(>9.0)] -> [itemid(<=0.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [caregiver_id(>29635.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [subject_id(>2396.0)]}
+{ [stay_id(>8560176.0)] ∧ [itemid(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [storetime(>9.0)]}
+{ [subject_id(>2316.0)] ∧ [storetime(>9.0)] -> [stay_id(>8560176.0)]}
+{ [subject_id(>2396.0)] ∧ [value(<=0.0)] -> [storetime(>8.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>7.0)] -> [hadm_id(>8733547.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [charttime(>6.0)] -> [caregiver_id(<=0.0)]}
+{ [stay_id(>8348488.0)] ∧ [caregiver_id(<=0.0)] -> [charttime(>7.0)]}
+{ [hadm_id(>8733547.0)] ∧ [charttime(<=0.0)] -> [caregiver_id(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(>949.0)] -> [value(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [stay_id(<=0.0)] -> [subject_id(>2396.0)]}
+{ [stay_id(>8348488.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [charttime(>6.0)]}
+{ [subject_id(>2316.0)] ∧ [charttime(<=0.0)] -> [storetime(>9.0)]}
+{ [subject_id(>2316.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [hadm_id(>8733547.0)]}
+{ [value(<=0.0)] ∧ [charttime(<=0.0)] ∧ [storetime(<=0.0)] -> [hadm_id(>8733547.0)]}
+{ [stay_id(>8348488.0)] ∧ [itemid(>949.0)] -> [hadm_id(>8733547.0)]}
+{ [stay_id(>8560176.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [caregiver_id(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [stay_id(>8348488.0)] -> [subject_id(>2396.0)]}
+{ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [subject_id(>2396.0)]}
+{ [subject_id(<=0.0)] ∧ [stay_id(>8348488.0)] -> [itemid(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [storetime(>8.0)] -> [value(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [caregiver_id(>29122.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [itemid(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [storetime(>9.0)]}
+{ [caregiver_id(>29122.0)] ∧ [charttime(<=0.0)] -> [storetime(>9.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [charttime(>6.0)] -> [valueuom(>0.0)]}
+{ [stay_id(>8348488.0)] ∧ [value(<=0.0)] ∧ [storetime(>9.0)] -> [charttime(>7.0)]}
+{ [itemid(>949.0)] ∧ [value(<=0.0)] ∧ [storetime(<=0.0)] -> [charttime(>7.0)]}
+{ [itemid(>949.0)] ∧ [value(<=0.0)] ∧ [charttime(<=0.0)] -> [valueuom(>0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [charttime(<=0.0)] -> [value(>134.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [storetime(>9.0)]}
+{ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [valueuom(>0.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [charttime(>6.0)] -> [subject_id(>2396.0)]}
+{ [stay_id(<=0.0)] ∧ [storetime(>8.0)] -> [caregiver_id(>29635.0)]}
+{ [subject_id(>2316.0)] ∧ [caregiver_id(>29122.0)] ∧ [charttime(>7.0)] ∧ [storetime(>8.0)] -> [itemid(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>7.0)] -> [subject_id(<=0.0)]}
+{ [subject_id(>2396.0)] ∧ [caregiver_id(>29122.0)] -> [hadm_id(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [caregiver_id(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [stay_id(>8348488.0)] -> [subject_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [hadm_id(>8733547.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [storetime(>8.0)] -> [hadm_id(>8733547.0)]}
+{ [itemid(<=0.0)] ∧ [charttime(<=0.0)] -> [valueuom(>0.0)]}
+{ [subject_id(>2316.0)] ∧ [charttime(<=0.0)] -> [caregiver_id(>29635.0)]}
+{ [valueuom(>0.0)] -> [storetime(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [caregiver_id(<=0.0)] -> [value(>134.0)]}
+{ [hadm_id(>8733547.0)] ∧ [itemid(<=0.0)] -> [storetime(<=0.0)]}
+{ [storetime(<=0.0)] -> [caregiver_id(<=0.0)]}
+{ [stay_id(>8348488.0)] ∧ [storetime(<=0.0)] -> [value(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [storetime(<=0.0)] -> [itemid(>950.0)]}
+{ [subject_id(<=0.0)] ∧ [storetime(>9.0)] -> [charttime(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [hadm_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [storetime(>8.0)] -> [stay_id(>8560176.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [storetime(>8.0)] -> [value(>134.0)]}
+{ [stay_id(>8348488.0)] ∧ [caregiver_id(<=0.0)] -> [storetime(>9.0)]}
+{ [itemid(>949.0)] ∧ [value(<=0.0)] ∧ [storetime(>9.0)] -> [subject_id(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [storetime(>9.0)] -> [stay_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [stay_id(>8348488.0)] -> [storetime(>9.0)]}
+{ [valueuom(>0.0)] -> [itemid(>950.0)]}
+{ [hadm_id(>8733547.0)] ∧ [storetime(>9.0)] -> [caregiver_id(>29635.0)]}
+{ [subject_id(>2316.0)] ∧ [charttime(<=0.0)] -> [stay_id(>8560176.0)]}
+{ [subject_id(>2316.0)] ∧ [caregiver_id(<=0.0)] -> [stay_id(>8560176.0)]}
+{ [itemid(>949.0)] ∧ [value(>128.0)] ∧ [charttime(<=0.0)] ∧ [storetime(<=0.0)] -> [hadm_id(>8733547.0)]}
+{ [subject_id(>2316.0)] ∧ [caregiver_id(>29122.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [storetime(>9.0)]}
+{ [subject_id(>2316.0)] ∧ [itemid(>949.0)] -> [hadm_id(>8733547.0)]}
+{ [stay_id(>8560176.0)] ∧ [storetime(>9.0)] -> [value(<=0.0)]}
+{ [stay_id(<=0.0)] ∧ [storetime(>8.0)] -> [charttime(>7.0)]}
+{ [stay_id(>8348488.0)] ∧ [charttime(<=0.0)] -> [storetime(>9.0)]}
+{ [hadm_id(>8733547.0)] ∧ [storetime(>9.0)] -> [itemid(<=0.0)]}
+{ [caregiver_id(<=0.0)] ∧ [itemid(>949.0)] -> [subject_id(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(<=0.0)] ∧ [charttime(>6.0)] -> [value(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [charttime(<=0.0)] -> [itemid(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [stay_id(>8348488.0)] -> [valueuom(>0.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [charttime(>7.0)] -> [value(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [storetime(>9.0)] -> [stay_id(<=0.0)]}
+{ [subject_id(>2316.0)] ∧ [storetime(>9.0)] -> [caregiver_id(>29635.0)]}
+{ [subject_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [storetime(>8.0)] -> [hadm_id(>8733547.0)]}
+{ [hadm_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [value(<=0.0)] -> [charttime(>7.0)]}
+{ [valueuom(>0.0)] -> [stay_id(<=0.0)]}
+{ [stay_id(<=0.0)] ∧ [itemid(>949.0)] ∧ [charttime(>6.0)] -> [caregiver_id(<=0.0)]}
+{ [subject_id(>2396.0)] ∧ [storetime(>8.0)] -> [charttime(>6.0)]}
+{ [subject_id(>2316.0)] ∧ [caregiver_id(>29122.0)] ∧ [value(<=0.0)] ∧ [storetime(>8.0)] -> [hadm_id(>8733547.0)]}
+{ [storetime(<=0.0)] -> [hadm_id(<=0.0)]}
+{ [stay_id(>8560176.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [caregiver_id(>29635.0)]}
+{ [hadm_id(>8733547.0)] ∧ [caregiver_id(>29122.0)] ∧ [charttime(>6.0)] ∧ [storetime(>8.0)] -> [stay_id(>8560176.0)]}
+{ [hadm_id(>8733547.0)] ∧ [itemid(<=0.0)] -> [stay_id(<=0.0)]}
+{ [subject_id(<=0.0)] ∧ [stay_id(>8348488.0)] -> [caregiver_id(>29635.0)]}
+{ [hadm_id(>8733547.0)] ∧ [storetime(>9.0)] -> [value(>134.0)]}
+{ [itemid(>949.0)] ∧ [value(<=0.0)] ∧ [storetime(>9.0)] -> [subject_id(>2396.0)]}
+{ [caregiver_id(>29122.0)] ∧ [storetime(<=0.0)] -> [value(<=0.0)]}
+{ [hadm_id(>8733547.0)] ∧ [storetime(>9.0)] -> [stay_id(>8560176.0)]}
+{ [caregiver_id(>29122.0)] ∧ [storetime(<=0.0)] -> [hadm_id(>8733547.0)]}
+{ [subject_id(>2316.0)] ∧ [stay_id(<=0.0)] -> [valueuom(>0.0)]}
+{ [stay_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [hadm_id(>8733547.0)]}
+{ [hadm_id(>8733547.0)] ∧ [caregiver_id(>29122.0)] ∧ [charttime(>6.0)] ∧ [storetime(>8.0)] -> [itemid(<=0.0)]}
+{ [hadm_id(<=0.0)] ∧ [value(<=0.0)] ∧ [charttime(>6.0)] -> [itemid(>950.0)]}
+{ [subject_id(<=0.0)] ∧ [storetime(>9.0)] -> [itemid(>950.0)]}
+{ [subject_id(>2396.0)] ∧ [value(<=0.0)] -> [charttime(>6.0)]}
+{ [subject_id(>2316.0)] ∧ [charttime(<=0.0)] -> [value(>134.0)]}
+{ [subject_id(<=0.0)] ∧ [caregiver_id(<=0.0)] ∧ [storetime(>8.0)] -> [itemid(<=0.0)]}
