@@ -143,6 +143,7 @@ def calculate_distances_for_coordinates(attribute, unique_values, coordinate_chu
         distance_lookup[(value1, value2)] = distance
     return distance_lookup
 
+
 def calculate_unique_distances(attribute, unique_values, num_processes):
     unique_values = [v for v in unique_values if pd.notnull(v)]
     distance_lookup = {}
@@ -168,15 +169,16 @@ def calculate_unique_distances(attribute, unique_values, num_processes):
 
     return distance_lookup
 
+
 def build_all_distance_lookups(data_instance, sorted_thresholds, num_processes):
     distance_lookups = {}
     attributes = list(sorted_thresholds.keys())
 
     for attribute in attributes:
         max_threshold = sorted_thresholds[attribute][0]
-        if max_threshold == 0:
-            # print(f"Skipping {attribute} since max threshold is 0.")
-            continue
+        # if max_threshold == 0:
+        #     # print(f"Skipping {attribute} since max threshold is 0.")
+        #     continue
         # print(f"Processing attribute: {attribute}")
         values = preprocess_values([row[attribute] for row in data_instance])
         unique_values = list(set(values))
@@ -188,6 +190,7 @@ def build_all_distance_lookups(data_instance, sorted_thresholds, num_processes):
         distance_lookups[attribute] = distance_lookup
 
     return distance_lookups
+
 
 # large-scale dataset
 def compute_distance_chunk(chunk, unique_block, unique_full, attribute):
@@ -203,7 +206,11 @@ def compute_distance_chunk(chunk, unique_block, unique_full, attribute):
             dist = calculate_difference(vi, vj, attribute)
         lookup[(vi, vj)] = dist
     return lookup
-def build_all_distance_lookups_for_block(block_data, full_data, sorted_thresholds, num_processes):
+
+
+def build_all_distance_lookups_for_block(
+    block_data, full_data, sorted_thresholds, num_processes
+):
     distance_lookups = {}
     attributes = list(sorted_thresholds.keys())
 
@@ -218,18 +225,25 @@ def build_all_distance_lookups_for_block(block_data, full_data, sorted_threshold
         unique_full = list(set(full_values))
         # print(f"Unique values for {attribute} in block: {len(unique_block)}")
         # print(f"Unique values for {attribute} in full data: {len(unique_full)}")
-        
-        coordinate_pairs = [(i, j) for i in range(len(unique_block)) for j in range(len(unique_full))]
-        chunk_size = len(coordinate_pairs) // num_processes + (len(coordinate_pairs) % num_processes > 0)
+
+        coordinate_pairs = [
+            (i, j) for i in range(len(unique_block)) for j in range(len(unique_full))
+        ]
+        chunk_size = len(coordinate_pairs) // num_processes + (
+            len(coordinate_pairs) % num_processes > 0
+        )
         coordinate_chunks = [
-            coordinate_pairs[i: i + chunk_size]
+            coordinate_pairs[i : i + chunk_size]
             for i in range(0, len(coordinate_pairs), chunk_size)
         ]
-        
+
         with multiprocessing.Pool(num_processes) as pool:
             results = pool.starmap(
                 compute_distance_chunk,
-                [(chunk, unique_block, unique_full, attribute) for chunk in coordinate_chunks]
+                [
+                    (chunk, unique_block, unique_full, attribute)
+                    for chunk in coordinate_chunks
+                ],
             )
 
         merged = {}
@@ -240,6 +254,7 @@ def build_all_distance_lookups_for_block(block_data, full_data, sorted_threshold
         print(f"Distance lookup for {attribute} has {len(merged)} entries.")
 
     return distance_lookups
+
 
 def incremental_calculate_unique_distances(
     attribute, original_unique_values, delta_unique_values, num_processes

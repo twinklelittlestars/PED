@@ -3,4 +3,8 @@
     ({"composed_key": ("<=", 0.0)}, ("schedArrTime", ("<=", 0.0))),
     ({"composed_key": ("<=", 0.0)}, ("actDepTime", ("<=", 0.0))),
     ({"composed_key": ("<=", 0.0)}, ("schedDepTime", ("<=", 0.0))),
+    ({'schedDepTime': ('>', 15354.0), 'actArrTime': ('<=', 0.0)}, ('schedArrTime', ('<=', 0.0))),
+    ({'schedArrTime': ('>', 15349.0), 'actArrTime': ('<=', 0.0)}, ('actDepTime', ('<=', 0.0))),
+    ({'schedArrTime': ('>', 0.0), 'actDepTime': ('<=', 0.0), 'actArrTime': ('<=', 0.0)}, ('schedDepTime', ('>', 0.0))),
+    ({'schedDepTime': ('>', 0.0), 'schedArrTime': ('<=', 0.0), 'actArrTime': ('<=', 0.0)}, ('actDepTime', ('>', 0.0))),
 ]

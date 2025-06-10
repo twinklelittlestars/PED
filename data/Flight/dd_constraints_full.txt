@@ -1,163 +1,165 @@
-{ [schedDepTime(>3.0)] ∧ [actDepTime(<=0.0)] -> [actArrTime(>4.0)]}
-{ [schedDepTime(<=0.0)] ∧ [actDepTime(>4.0)] -> [actArrTime(>4.0)]}
-{ [schedDepTime(<=0.0)] ∧ [actArrTime(<=0.0)] -> [schedArrTime(<=0.0)]}
-{ [src(<=0.0)] ∧ [flight(<=0.0)] -> [schedArrTime(>4.0)]}
-{ [flight(>10.0)] ∧ [schedDepTime(<=0.0)] ∧ [actDepTime(<=0.0)] -> [src(<=0.0)]}
-{ [flight(>10.0)] ∧ [schedArrTime(<=0.0)] -> [schedDepTime(<=0.0)]}
-{ [schedArrTime(<=0.0)] ∧ [actArrTime(>4.0)] -> [schedDepTime(>4.0)]}
-{ [schedArrTime(>4.0)] ∧ [actArrTime(<=0.0)] -> [schedDepTime(>4.0)]}
-{ [schedDepTime(<=0.0)] ∧ [actArrTime(>4.0)] -> [flight(>11.0)]}
-{ [schedDepTime(>3.0)] ∧ [actArrTime(<=0.0)] -> [actDepTime(>4.0)]}
-{ [schedDepTime(>3.0)] ∧ [actArrTime(<=0.0)] -> [flight(>11.0)]}
-{ [flight(>11.0)] ∧ [actArrTime(<=0.0)] -> [schedDepTime(>4.0)]}
-{ [schedDepTime(<=0.0)] ∧ [actArrTime(>4.0)] -> [actDepTime(>4.0)]}
-{ [flight(>10.0)] ∧ [schedDepTime(<=0.0)] ∧ [actDepTime(<=0.0)] -> [schedArrTime(<=0.0)]}
-{ [schedDepTime(>4.0)] ∧ [schedArrTime(<=0.0)] -> [actArrTime(>4.0)]}
-{ [flight(>10.0)] ∧ [schedDepTime(<=0.0)] ∧ [schedArrTime(>4.0)] -> [actDepTime(>4.0)]}
-{ [flight(>10.0)] ∧ [schedDepTime(<=0.0)] ∧ [schedArrTime(>4.0)] -> [src(>11.0)]}
-{ [schedArrTime(<=0.0)] ∧ [actArrTime(>4.0)] -> [actDepTime(>4.0)]}
-{ [schedArrTime(>4.0)] ∧ [actArrTime(<=0.0)] -> [actDepTime(>4.0)]}
-{ [actDepTime(<=0.0)] ∧ [actArrTime(>4.0)] -> [src(>11.0)]}
-{ [actDepTime(>4.0)] ∧ [actArrTime(<=0.0)] -> [src(>11.0)]}
-{ [flight(<=0.0)] ∧ [schedDepTime(>3.0)] -> [schedArrTime(>4.0)]}
-{ [flight(<=0.0)] ∧ [actDepTime(>4.0)] -> [schedArrTime(>4.0)]}
-{ [flight(>10.0)] ∧ [schedArrTime(<=0.0)] -> [actArrTime(<=0.0)]}
-{ [schedDepTime(>4.0)] ∧ [schedArrTime(<=0.0)] -> [actDepTime(<=0.0)]}
-{ [flight(>11.0)] ∧ [actArrTime(<=0.0)] -> [actDepTime(>4.0)]}
-{ [flight(<=0.0)] ∧ [actArrTime(>4.0)] -> [schedDepTime(>4.0)]}
-{ [schedDepTime(<=0.0)] ∧ [actDepTime(>4.0)] -> [schedArrTime(>4.0)]}
-{ [schedDepTime(>3.0)] ∧ [actDepTime(<=0.0)] -> [schedArrTime(>4.0)]}
-{ [flight(>10.0)] ∧ [schedDepTime(<=0.0)] ∧ [actArrTime(<=0.0)] -> [schedArrTime(>4.0)]}
-{ [flight(>10.0)] ∧ [schedArrTime(<=0.0)] -> [actDepTime(<=0.0)]}
-{ [schedDepTime(<=0.0)] ∧ [actArrTime(>4.0)] -> [src(<=0.0)]}
-{ [schedDepTime(>3.0)] ∧ [actArrTime(<=0.0)] -> [src(<=0.0)]}
-{ [flight(<=0.0)] ∧ [schedDepTime(>3.0)] -> [actArrTime(>4.0)]}
-{ [flight(<=0.0)] -> [schedArrTime(<=0.0)]}
-{ [flight(<=0.0)] ∧ [actArrTime(>4.0)] -> [actDepTime(>4.0)]}
-{ [src(<=0.0)] ∧ [flight(<=0.0)] -> [actDepTime(>4.0)]}
-{ [flight(>10.0)] ∧ [actDepTime(<=0.0)] ∧ [actArrTime(<=0.0)] -> [schedArrTime(>4.0)]}
-{ [actDepTime(<=0.0)] ∧ [actArrTime(>4.0)] -> [schedArrTime(>4.0)]}
-{ [actDepTime(>4.0)] ∧ [actArrTime(<=0.0)] -> [schedArrTime(>4.0)]}
-{ [flight(>10.0)] ∧ [schedDepTime(<=0.0)] ∧ [schedArrTime(>4.0)] -> [src(<=0.0)]}
-{ [flight(>11.0)] ∧ [schedDepTime(>4.0)] ∧ [actDepTime(>4.0)] ∧ [schedArrTime(>4.0)] -> [actArrTime(>4.0)]}
-{ [actDepTime(<=0.0)] ∧ [schedArrTime(>4.0)] -> [flight(<=0.0)]}
-{ [actDepTime(>4.0)] ∧ [schedArrTime(<=0.0)] -> [flight(<=0.0)]}
-{ [flight(>11.0)] ∧ [actArrTime(<=0.0)] -> [actDepTime(<=0.0)]}
-{ [schedArrTime(<=0.0)] ∧ [actArrTime(>4.0)] -> [flight(>11.0)]}
-{ [schedArrTime(>4.0)] ∧ [actArrTime(<=0.0)] -> [flight(>11.0)]}
-{ [schedDepTime(>3.0)] ∧ [actDepTime(<=0.0)] -> [src(>11.0)]}
-{ [schedDepTime(<=0.0)] ∧ [actDepTime(>4.0)] -> [src(>11.0)]}
-{ [actDepTime(<=0.0)] ∧ [schedArrTime(<=0.0)] -> [schedDepTime(<=0.0)]}
-{ [schedDepTime(<=0.0)] ∧ [actArrTime(>4.0)] -> [flight(<=0.0)]}
-{ [flight(<=0.0)] ∧ [schedArrTime(>4.0)] -> [actArrTime(>4.0)]}
-{ [schedDepTime(>3.0)] ∧ [actArrTime(<=0.0)] -> [flight(<=0.0)]}
-{ [flight(>10.0)] ∧ [schedDepTime(<=0.0)] ∧ [actArrTime(<=0.0)] -> [src(<=0.0)]}
-{ [schedDepTime(>4.0)] ∧ [schedArrTime(<=0.0)] -> [src(>11.0)]}
-{ [flight(>10.0)] ∧ [schedArrTime(<=0.0)] -> [actArrTime(>4.0)]}
-{ [flight(<=0.0)] ∧ [actDepTime(>4.0)] -> [actArrTime(>4.0)]}
-{ [flight(<=0.0)] -> [actArrTime(<=0.0)]}
-{ [flight(<=0.0)] -> [actDepTime(<=0.0)]}
-{ [actDepTime(<=0.0)] ∧ [actArrTime(<=0.0)] -> [schedArrTime(<=0.0)]}
-{ [flight(>10.0)] ∧ [schedDepTime(<=0.0)] ∧ [schedArrTime(>4.0)] -> [actDepTime(<=0.0)]}
-{ [actDepTime(<=0.0)] ∧ [actArrTime(>4.0)] -> [flight(>11.0)]}
-{ [actDepTime(>4.0)] ∧ [actArrTime(<=0.0)] -> [flight(>11.0)]}
-{ [schedDepTime(<=0.0)] ∧ [actDepTime(>4.0)] -> [src(<=0.0)]}
-{ [flight(>11.0)] ∧ [actArrTime(<=0.0)] -> [schedArrTime(<=0.0)]}
-{ [schedDepTime(>3.0)] ∧ [actArrTime(<=0.0)] -> [src(>11.0)]}
-{ [schedDepTime(<=0.0)] ∧ [actArrTime(>4.0)] -> [src(>11.0)]}
-{ [flight(<=0.0)] ∧ [schedDepTime(>3.0)] -> [src(>11.0)]}
-{ [src(<=0.0)] ∧ [flight(<=0.0)] -> [actArrTime(>4.0)]}
-{ [actDepTime(<=0.0)] ∧ [schedArrTime(>4.0)] -> [actArrTime(>4.0)]}
-{ [actDepTime(>4.0)] ∧ [schedArrTime(<=0.0)] -> [actArrTime(>4.0)]}
-{ [flight(>10.0)] ∧ [schedDepTime(<=0.0)] ∧ [actDepTime(<=0.0)] -> [actArrTime(<=0.0)]}
-{ [flight(>10.0)] ∧ [schedDepTime(<=0.0)] ∧ [schedArrTime(>4.0)] -> [actArrTime(<=0.0)]}
-{ [actDepTime(<=0.0)] ∧ [schedArrTime(>4.0)] -> [schedDepTime(<=0.0)]}
-{ [actDepTime(>4.0)] ∧ [schedArrTime(<=0.0)] -> [schedDepTime(<=0.0)]}
-{ [schedDepTime(>4.0)] ∧ [schedArrTime(<=0.0)] -> [src(<=0.0)]}
-{ [actDepTime(<=0.0)] ∧ [schedArrTime(>4.0)] -> [flight(>11.0)]}
-{ [actDepTime(>4.0)] ∧ [schedArrTime(<=0.0)] -> [flight(>11.0)]}
-{ [schedDepTime(<=0.0)] ∧ [actDepTime(>4.0)] -> [schedArrTime(<=0.0)]}
-{ [schedArrTime(<=0.0)] ∧ [actArrTime(<=0.0)] -> [actDepTime(<=0.0)]}
-{ [schedDepTime(>3.0)] ∧ [actDepTime(<=0.0)] -> [schedArrTime(<=0.0)]}
-{ [schedArrTime(<=0.0)] ∧ [actArrTime(>4.0)] -> [flight(<=0.0)]}
-{ [schedArrTime(>4.0)] ∧ [actArrTime(<=0.0)] -> [flight(<=0.0)]}
-{ [schedDepTime(<=0.0)] ∧ [actArrTime(>4.0)] -> [actDepTime(<=0.0)]}
-{ [flight(<=0.0)] ∧ [schedArrTime(>4.0)] -> [src(>11.0)]}
-{ [schedDepTime(>3.0)] ∧ [actArrTime(<=0.0)] -> [actDepTime(<=0.0)]}
-{ [schedDepTime(>3.0)] ∧ [actDepTime(<=0.0)] -> [src(<=0.0)]}
-{ [flight(<=0.0)] ∧ [schedArrTime(>4.0)] -> [schedDepTime(>4.0)]}
-{ [flight(>10.0)] ∧ [schedDepTime(<=0.0)] ∧ [actArrTime(<=0.0)] -> [src(>11.0)]}
-{ [actDepTime(<=0.0)] ∧ [schedArrTime(<=0.0)] -> [actArrTime(<=0.0)]}
-{ [flight(>10.0)] ∧ [schedArrTime(<=0.0)] -> [src(>11.0)]}
-{ [flight(<=0.0)] ∧ [actDepTime(>4.0)] -> [src(>11.0)]}
-{ [flight(>10.0)] ∧ [schedArrTime(<=0.0)] -> [actDepTime(>4.0)]}
-{ [flight(>10.0)] ∧ [schedDepTime(<=0.0)] ∧ [actDepTime(<=0.0)] -> [actArrTime(>4.0)]}
-{ [flight(>10.0)] ∧ [actDepTime(<=0.0)] ∧ [actArrTime(<=0.0)] -> [schedDepTime(>4.0)]}
-{ [actDepTime(>4.0)] ∧ [actArrTime(<=0.0)] -> [schedDepTime(<=0.0)]}
-{ [actDepTime(<=0.0)] ∧ [actArrTime(>4.0)] -> [schedDepTime(<=0.0)]}
-{ [flight(<=0.0)] ∧ [schedArrTime(>4.0)] -> [actDepTime(>4.0)]}
-{ [flight(<=0.0)] ∧ [actArrTime(>4.0)] -> [src(<=0.0)]}
-{ [schedDepTime(>3.0)] ∧ [actDepTime(<=0.0)] -> [actArrTime(<=0.0)]}
-{ [actDepTime(<=0.0)] ∧ [schedArrTime(>4.0)] -> [src(>11.0)]}
-{ [actDepTime(>4.0)] ∧ [schedArrTime(<=0.0)] -> [src(>11.0)]}
-{ [schedDepTime(>4.0)] ∧ [schedArrTime(<=0.0)] -> [flight(<=0.0)]}
-{ [schedDepTime(<=0.0)] ∧ [actArrTime(>4.0)] -> [schedArrTime(>4.0)]}
-{ [flight(>11.0)] ∧ [actArrTime(<=0.0)] -> [src(<=0.0)]}
-{ [actDepTime(<=0.0)] ∧ [actArrTime(>4.0)] -> [flight(<=0.0)]}
-{ [actDepTime(>4.0)] ∧ [actArrTime(<=0.0)] -> [flight(<=0.0)]}
-{ [schedDepTime(>3.0)] ∧ [actArrTime(<=0.0)] -> [schedArrTime(>4.0)]}
-{ [schedDepTime(<=0.0)] ∧ [actDepTime(>4.0)] -> [actArrTime(<=0.0)]}
-{ [actDepTime(<=0.0)] ∧ [actArrTime(>4.0)] -> [schedArrTime(<=0.0)]}
-{ [actDepTime(>4.0)] ∧ [actArrTime(<=0.0)] -> [schedArrTime(<=0.0)]}
-{ [actDepTime(<=0.0)] ∧ [actArrTime(<=0.0)] -> [schedDepTime(<=0.0)]}
-{ [flight(>11.0)] ∧ [actArrTime(<=0.0)] -> [schedDepTime(<=0.0)]}
-{ [schedArrTime(<=0.0)] ∧ [actArrTime(>4.0)] -> [schedDepTime(<=0.0)]}
-{ [schedArrTime(>4.0)] ∧ [actArrTime(<=0.0)] -> [schedDepTime(<=0.0)]}
-{ [schedDepTime(>3.0)] ∧ [actDepTime(<=0.0)] -> [flight(<=0.0)]}
-{ [schedDepTime(>4.0)] ∧ [schedArrTime(<=0.0)] -> [actArrTime(<=0.0)]}
-{ [flight(<=0.0)] ∧ [schedDepTime(>3.0)] -> [src(<=0.0)]}
-{ [schedDepTime(<=0.0)] ∧ [actDepTime(>4.0)] -> [flight(<=0.0)]}
-{ [flight(<=0.0)] ∧ [schedDepTime(>3.0)] -> [actDepTime(>4.0)]}
-{ [schedDepTime(<=0.0)] ∧ [schedArrTime(<=0.0)] -> [actArrTime(<=0.0)]}
-{ [flight(>10.0)] ∧ [actDepTime(<=0.0)] ∧ [actArrTime(<=0.0)] -> [src(>11.0)]}
-{ [schedArrTime(<=0.0)] ∧ [actArrTime(>4.0)] -> [actDepTime(<=0.0)]}
-{ [schedArrTime(>4.0)] ∧ [actArrTime(<=0.0)] -> [actDepTime(<=0.0)]}
-{ [schedDepTime(<=0.0)] ∧ [schedArrTime(<=0.0)] -> [actDepTime(<=0.0)]}
-{ [schedArrTime(<=0.0)] ∧ [actArrTime(<=0.0)] -> [schedDepTime(<=0.0)]}
-{ [schedDepTime(<=0.0)] ∧ [actArrTime(>4.0)] -> [schedArrTime(<=0.0)]}
-{ [actDepTime(<=0.0)] ∧ [actArrTime(>4.0)] -> [src(<=0.0)]}
-{ [actDepTime(>4.0)] ∧ [actArrTime(<=0.0)] -> [src(<=0.0)]}
-{ [schedDepTime(>3.0)] ∧ [actArrTime(<=0.0)] -> [schedArrTime(<=0.0)]}
-{ [flight(>10.0)] ∧ [actDepTime(<=0.0)] ∧ [actArrTime(<=0.0)] -> [src(<=0.0)]}
-{ [flight(<=0.0)] ∧ [schedArrTime(>4.0)] -> [src(<=0.0)]}
-{ [schedDepTime(>4.0)] ∧ [schedArrTime(<=0.0)] -> [actDepTime(>4.0)]}
-{ [flight(>10.0)] ∧ [schedDepTime(<=0.0)] ∧ [actDepTime(<=0.0)] -> [src(>11.0)]}
-{ [actDepTime(<=0.0)] ∧ [schedArrTime(>4.0)] -> [actArrTime(<=0.0)]}
-{ [actDepTime(>4.0)] ∧ [schedArrTime(<=0.0)] -> [actArrTime(<=0.0)]}
-{ [actDepTime(<=0.0)] ∧ [schedArrTime(>4.0)] -> [schedDepTime(>4.0)]}
-{ [actDepTime(>4.0)] ∧ [schedArrTime(<=0.0)] -> [schedDepTime(>4.0)]}
-{ [schedDepTime(<=0.0)] ∧ [actArrTime(<=0.0)] -> [actDepTime(<=0.0)]}
-{ [flight(>10.0)] ∧ [schedArrTime(<=0.0)] -> [src(<=0.0)]}
-{ [schedArrTime(<=0.0)] ∧ [actArrTime(>4.0)] -> [src(<=0.0)]}
-{ [schedArrTime(>4.0)] ∧ [actArrTime(<=0.0)] -> [src(<=0.0)]}
-{ [flight(>10.0)] ∧ [schedDepTime(<=0.0)] ∧ [schedArrTime(>4.0)] -> [actArrTime(>4.0)]}
-{ [flight(>11.0)] ∧ [actArrTime(<=0.0)] -> [schedArrTime(>4.0)]}
-{ [flight(<=0.0)] ∧ [actDepTime(>4.0)] -> [src(<=0.0)]}
-{ [flight(<=0.0)] ∧ [actArrTime(>4.0)] -> [schedArrTime(>4.0)]}
-{ [flight(>11.0)] ∧ [actArrTime(<=0.0)] -> [src(>11.0)]}
-{ [flight(<=0.0)] ∧ [actDepTime(>4.0)] -> [schedDepTime(>4.0)]}
-{ [schedArrTime(<=0.0)] ∧ [actArrTime(>4.0)] -> [src(>11.0)]}
-{ [schedArrTime(>4.0)] ∧ [actArrTime(<=0.0)] -> [src(>11.0)]}
-{ [schedDepTime(>4.0)] ∧ [schedArrTime(<=0.0)] -> [flight(>11.0)]}
-{ [flight(>10.0)] ∧ [schedArrTime(<=0.0)] -> [schedDepTime(>4.0)]}
-{ [flight(<=0.0)] ∧ [actArrTime(>4.0)] -> [src(>11.0)]}
-{ [flight(>10.0)] ∧ [schedDepTime(<=0.0)] ∧ [actDepTime(<=0.0)] -> [schedArrTime(>4.0)]}
-{ [flight(<=0.0)] -> [schedDepTime(<=0.0)]}
-{ [flight(>10.0)] ∧ [schedDepTime(<=0.0)] ∧ [actArrTime(<=0.0)] -> [actDepTime(>4.0)]}
-{ [src(<=0.0)] ∧ [flight(<=0.0)] -> [schedDepTime(>4.0)]}
-{ [actDepTime(<=0.0)] ∧ [actArrTime(>4.0)] -> [schedDepTime(>4.0)]}
-{ [actDepTime(>4.0)] ∧ [actArrTime(<=0.0)] -> [schedDepTime(>4.0)]}
-{ [actDepTime(<=0.0)] ∧ [schedArrTime(>4.0)] -> [src(<=0.0)]}
-{ [actDepTime(>4.0)] ∧ [schedArrTime(<=0.0)] -> [src(<=0.0)]}
-{ [schedDepTime(<=0.0)] ∧ [actDepTime(>4.0)] -> [flight(>11.0)]}
-{ [schedDepTime(>3.0)] ∧ [actDepTime(<=0.0)] -> [flight(>11.0)]}
+[
+    ({'flight': ('>', 10.0), 'schedDepTime': ('<=', 0.0), 'schedArrTime': ('>', 4.0)}, ('src', ('<=', 0.0))),
+    ({'flight': ('>', 10.0), 'schedArrTime': ('<=', 0.0)}, ('src', ('<=', 0.0))),
+    ({'flight': ('>', 10.0), 'schedDepTime': ('<=', 0.0), 'schedArrTime': ('>', 4.0)}, ('actArrTime', ('<=', 0.0))),
+    ({'flight': ('>', 10.0), 'schedArrTime': ('<=', 0.0)}, ('schedDepTime', ('<=', 0.0))),
+    ({'flight': ('>', 10.0), 'actDepTime': ('<=', 0.0), 'actArrTime': ('<=', 0.0)}, ('schedArrTime', ('>', 4.0))),
+    ({'flight': ('>', 10.0), 'schedDepTime': ('<=', 0.0), 'actDepTime': ('<=', 0.0)}, ('src', ('>', 11.0))),
+    ({'flight': ('>', 10.0), 'schedDepTime': ('<=', 0.0), 'actDepTime': ('<=', 0.0)}, ('src', ('<=', 0.0))),
+    ({'flight': ('>', 10.0), 'schedDepTime': ('<=', 0.0), 'actDepTime': ('<=', 0.0)}, ('actArrTime', ('<=', 0.0))),
+    ({'actDepTime': ('<=', 0.0), 'schedArrTime': ('<=', 0.0)}, ('schedDepTime', ('<=', 0.0))),
+    ({'flight': ('>', 11.0), 'actArrTime': ('<=', 0.0)}, ('src', ('<=', 0.0))),
+    ({'flight': ('>', 11.0), 'actArrTime': ('<=', 0.0)}, ('src', ('>', 11.0))),
+    ({'schedDepTime': ('>', 4.0), 'schedArrTime': ('<=', 0.0)}, ('flight', ('<=', 0.0))),
+    ({'flight': ('>', 10.0), 'actDepTime': ('<=', 0.0), 'actArrTime': ('<=', 0.0)}, ('src', ('>', 11.0))),
+    ({'flight': ('>', 10.0), 'actDepTime': ('<=', 0.0), 'actArrTime': ('<=', 0.0)}, ('src', ('<=', 0.0))),
+    ({'flight': ('>', 10.0), 'schedDepTime': ('<=', 0.0), 'schedArrTime': ('>', 4.0)}, ('actDepTime', ('>', 4.0))),
+    ({'flight': ('>', 10.0), 'schedDepTime': ('<=', 0.0), 'schedArrTime': ('>', 4.0)}, ('actDepTime', ('<=', 0.0))),
+    ({'flight': ('>', 10.0), 'actDepTime': ('<=', 0.0), 'actArrTime': ('<=', 0.0)}, ('schedDepTime', ('>', 4.0))),
+    ({'flight': ('>', 10.0), 'schedArrTime': ('<=', 0.0)}, ('actArrTime', ('>', 4.0))),
+    ({'schedDepTime': ('>', 4.0), 'schedArrTime': ('<=', 0.0)}, ('src', ('<=', 0.0))),
+    ({'flight': ('>', 11.0), 'actArrTime': ('<=', 0.0)}, ('schedArrTime', ('>', 4.0))),
+    ({'flight': ('>', 11.0), 'actArrTime': ('<=', 0.0)}, ('schedDepTime', ('>', 4.0))),
+    ({'flight': ('>', 11.0), 'actArrTime': ('<=', 0.0)}, ('schedArrTime', ('<=', 0.0))),
+    ({'flight': ('>', 11.0), 'actArrTime': ('<=', 0.0)}, ('schedDepTime', ('<=', 0.0))),
+    ({'schedArrTime': ('>', 4.0), 'actArrTime': ('<=', 0.0)}, ('flight', ('<=', 0.0))),
+    ({'flight': ('>', 10.0), 'schedArrTime': ('<=', 0.0)}, ('actDepTime', ('<=', 0.0))),
+    ({'schedDepTime': ('>', 4.0), 'schedArrTime': ('<=', 0.0)}, ('actDepTime', ('>', 4.0))),
+    ({'schedDepTime': ('>', 4.0), 'schedArrTime': ('<=', 0.0)}, ('actArrTime', ('>', 4.0))),
+    ({'schedDepTime': ('>', 4.0), 'schedArrTime': ('<=', 0.0)}, ('actArrTime', ('<=', 0.0))),
+    ({'schedArrTime': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('flight', ('<=', 0.0))),
+    ({'schedArrTime': ('<=', 0.0), 'actArrTime': ('<=', 0.0)}, ('schedDepTime', ('<=', 0.0))),
+    ({'schedArrTime': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('schedDepTime', ('<=', 0.0))),
+    ({'flight': ('>', 11.0), 'actArrTime': ('<=', 0.0)}, ('actDepTime', ('<=', 0.0))),
+    ({'actDepTime': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('schedArrTime', ('>', 4.0))),
+    ({'schedDepTime': ('>', 3.0), 'actArrTime': ('<=', 0.0)}, ('flight', ('<=', 0.0))),
+    ({'actDepTime': ('>', 4.0), 'schedArrTime': ('<=', 0.0)}, ('flight', ('<=', 0.0))),
+    ({'schedDepTime': ('>', 3.0), 'actDepTime': ('<=', 0.0)}, ('schedArrTime', ('>', 4.0))),
+    ({'schedDepTime': ('>', 3.0), 'actDepTime': ('<=', 0.0)}, ('flight', ('<=', 0.0))),
+    ({'actDepTime': ('>', 4.0), 'actArrTime': ('<=', 0.0)}, ('flight', ('<=', 0.0))),
+    ({'schedArrTime': ('>', 4.0), 'actArrTime': ('<=', 0.0)}, ('schedDepTime', ('>', 4.0))),
+    ({'schedArrTime': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('src', ('>', 11.0))),
+    ({'schedDepTime': ('>', 3.0), 'actArrTime': ('<=', 0.0)}, ('src', ('<=', 0.0))),
+    ({'actDepTime': ('<=', 0.0), 'actArrTime': ('<=', 0.0)}, ('schedDepTime', ('<=', 0.0))),
+    ({'schedArrTime': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('src', ('<=', 0.0))),
+    ({'actDepTime': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('flight', ('<=', 0.0))),
+    ({'schedArrTime': ('>', 4.0), 'actArrTime': ('<=', 0.0)}, ('src', ('<=', 0.0))),
+    ({'schedDepTime': ('>', 4.0), 'schedArrTime': ('<=', 0.0)}, ('actDepTime', ('<=', 0.0))),
+    ({'actDepTime': ('>', 4.0), 'actArrTime': ('<=', 0.0)}, ('schedArrTime', ('<=', 0.0))),
+    ({'flight': ('<=', 0.0), 'schedDepTime': ('>', 3.0)}, ('src', ('>', 11.0))),
+    ({'flight': ('<=', 0.0), 'schedDepTime': ('>', 3.0)}, ('src', ('<=', 0.0))),
+    ({'actDepTime': ('<=', 0.0), 'schedArrTime': ('>', 4.0)}, ('flight', ('<=', 0.0))),
+    ({'flight': ('<=', 0.0)}, ('schedDepTime', ('<=', 0.0))),
+    ({'schedArrTime': ('>', 4.0), 'actArrTime': ('<=', 0.0)}, ('flight', ('>', 11.0))),
+    ({'schedArrTime': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('actDepTime', ('>', 4.0))),
+    ({'schedDepTime': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('flight', ('<=', 0.0))),
+    ({'actDepTime': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('src', ('>', 11.0))),
+    ({'schedDepTime': ('>', 3.0), 'actDepTime': ('<=', 0.0)}, ('src', ('<=', 0.0))),
+    ({'actDepTime': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('src', ('<=', 0.0))),
+    ({'schedDepTime': ('<=', 0.0), 'actDepTime': ('>', 4.0)}, ('flight', ('<=', 0.0))),
+    ({'schedDepTime': ('<=', 0.0), 'actDepTime': ('>', 4.0)}, ('actArrTime', ('>', 4.0))),
+    ({'schedDepTime': ('>', 3.0), 'actDepTime': ('<=', 0.0)}, ('actArrTime', ('<=', 0.0))),
+    ({'actDepTime': ('>', 4.0), 'actArrTime': ('<=', 0.0)}, ('flight', ('>', 11.0))),
+    ({'schedArrTime': ('>', 4.0), 'actArrTime': ('<=', 0.0)}, ('actDepTime', ('<=', 0.0))),
+    ({'schedDepTime': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('src', ('>', 11.0))),
+    ({'actDepTime': ('<=', 0.0), 'schedArrTime': ('>', 4.0)}, ('schedDepTime', ('>', 4.0))),
+    ({'flight': ('<=', 0.0), 'schedDepTime': ('>', 3.0)}, ('schedArrTime', ('>', 4.0))),
+    ({'schedArrTime': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('flight', ('>', 11.0))),
+    ({'flight': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('src', ('>', 11.0))),
+    ({'schedDepTime': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('src', ('<=', 0.0))),
+    ({'schedDepTime': ('>', 3.0), 'actDepTime': ('<=', 0.0)}, ('schedArrTime', ('<=', 0.0))),
+    ({'flight': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('src', ('<=', 0.0))),
+    ({'flight': ('<=', 0.0), 'schedArrTime': ('>', 4.0)}, ('src', ('>', 11.0))),
+    ({'flight': ('<=', 0.0), 'schedArrTime': ('>', 4.0)}, ('src', ('<=', 0.0))),
+    ({'flight': ('<=', 0.0), 'schedArrTime': ('>', 4.0)}, ('schedDepTime', ('>', 4.0))),
+    ({'schedDepTime': ('<=', 0.0), 'actArrTime': ('<=', 0.0)}, ('schedArrTime', ('<=', 0.0))),
+    ({'flight': ('<=', 0.0), 'schedArrTime': ('>', 4.0)}, ('actArrTime', ('>', 4.0))),
+    ({'flight': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('actDepTime', ('>', 4.0))),
+    ({'schedDepTime': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('schedArrTime', ('>', 4.0))),
+    ({'actDepTime': ('>', 4.0), 'schedArrTime': ('<=', 0.0)}, ('schedDepTime', ('<=', 0.0))),
+    ({'schedDepTime': ('>', 3.0), 'actArrTime': ('<=', 0.0)}, ('actDepTime', ('>', 4.0))),
+    ({'actDepTime': ('<=', 0.0), 'actArrTime': ('<=', 0.0)}, ('schedArrTime', ('<=', 0.0))),
+    ({'schedDepTime': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('flight', ('>', 11.0))),
+    ({'flight': ('<=', 0.0)}, ('schedArrTime', ('<=', 0.0))),
+    ({'flight': ('<=', 0.0), 'schedDepTime': ('>', 3.0)}, ('actArrTime', ('>', 4.0))),
+    ({'schedDepTime': ('<=', 0.0), 'actDepTime': ('>', 4.0)}, ('src', ('>', 11.0))),
+    ({'schedDepTime': ('<=', 0.0), 'actDepTime': ('>', 4.0)}, ('schedArrTime', ('<=', 0.0))),
+    ({'schedDepTime': ('<=', 0.0), 'actDepTime': ('>', 4.0)}, ('src', ('<=', 0.0))),
+    ({'schedDepTime': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('actDepTime', ('>', 4.0))),
+    ({'flight': ('>', 11.0), 'schedDepTime': ('>', 4.0), 'actDepTime': ('>', 4.0), 'schedArrTime': ('>', 4.0)}, ('actArrTime', ('>', 4.0))),
+    ({'flight': ('<=', 0.0), 'schedDepTime': ('>', 3.0)}, ('actDepTime', ('>', 4.0))),
+    ({'schedArrTime': ('<=', 0.0), 'actArrTime': ('<=', 0.0)}, ('actDepTime', ('<=', 0.0))),
+    ({'flight': ('<=', 0.0), 'schedArrTime': ('>', 4.0)}, ('actDepTime', ('>', 4.0))),
+    ({'flight': ('<=', 0.0), 'actDepTime': ('>', 4.0)}, ('actArrTime', ('>', 4.0))),
+    ({'schedDepTime': ('<=', 0.0), 'actArrTime': ('<=', 0.0)}, ('actDepTime', ('<=', 0.0))),
+    ({'flight': ('<=', 0.0), 'actDepTime': ('>', 4.0)}, ('src', ('>', 11.0))),
+    ({'schedDepTime': ('<=', 0.0), 'schedArrTime': ('<=', 0.0)}, ('actArrTime', ('<=', 0.0))),
+    ({'flight': ('<=', 0.0), 'actDepTime': ('>', 4.0)}, ('src', ('<=', 0.0))),
+    ({'flight': ('<=', 0.0)}, ('actArrTime', ('<=', 0.0))),
+    ({'actDepTime': ('<=', 0.0), 'schedArrTime': ('<=', 0.0)}, ('actArrTime', ('<=', 0.0))),
+    ({'flight': ('>', 10.0), 'schedDepTime': ('<=', 0.0), 'schedArrTime': ('>', 4.0)}, ('src', ('>', 11.0))),
+    ({'flight': ('>', 10.0), 'schedArrTime': ('<=', 0.0)}, ('src', ('>', 11.0))),
+    ({'flight': ('>', 10.0), 'schedArrTime': ('<=', 0.0)}, ('schedDepTime', ('>', 4.0))),
+    ({'flight': ('>', 10.0), 'schedDepTime': ('<=', 0.0), 'actDepTime': ('<=', 0.0)}, ('schedArrTime', ('>', 4.0))),
+    ({'flight': ('>', 10.0), 'schedDepTime': ('<=', 0.0), 'actDepTime': ('<=', 0.0)}, ('schedArrTime', ('<=', 0.0))),
+    ({'flight': ('>', 10.0), 'schedDepTime': ('<=', 0.0), 'actDepTime': ('<=', 0.0)}, ('actArrTime', ('>', 4.0))),
+    ({'schedDepTime': ('>', 4.0), 'schedArrTime': ('<=', 0.0)}, ('flight', ('>', 11.0))),
+    ({'schedDepTime': ('>', 4.0), 'schedArrTime': ('<=', 0.0)}, ('src', ('>', 11.0))),
+    ({'flight': ('>', 10.0), 'schedArrTime': ('<=', 0.0)}, ('actArrTime', ('<=', 0.0))),
+    ({'flight': ('>', 10.0), 'schedArrTime': ('<=', 0.0)}, ('actDepTime', ('>', 4.0))),
+    ({'flight': ('>', 11.0), 'actArrTime': ('<=', 0.0)}, ('actDepTime', ('>', 4.0))),
+    ({'schedDepTime': ('>', 3.0), 'actArrTime': ('<=', 0.0)}, ('src', ('>', 11.0))),
+    ({'schedDepTime': ('>', 3.0), 'actArrTime': ('<=', 0.0)}, ('flight', ('>', 11.0))),
+    ({'schedArrTime': ('>', 4.0), 'actArrTime': ('<=', 0.0)}, ('src', ('>', 11.0))),
+    ({'actDepTime': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('schedDepTime', ('<=', 0.0))),
+    ({'schedDepTime': ('>', 3.0), 'actArrTime': ('<=', 0.0)}, ('schedArrTime', ('>', 4.0))),
+    ({'schedArrTime': ('>', 4.0), 'actArrTime': ('<=', 0.0)}, ('schedDepTime', ('<=', 0.0))),
+    ({'schedDepTime': ('>', 3.0), 'actDepTime': ('<=', 0.0)}, ('src', ('>', 11.0))),
+    ({'actDepTime': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('flight', ('>', 11.0))),
+    ({'schedDepTime': ('>', 3.0), 'actDepTime': ('<=', 0.0)}, ('flight', ('>', 11.0))),
+    ({'actDepTime': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('schedDepTime', ('>', 4.0))),
+    ({'actDepTime': ('>', 4.0), 'actArrTime': ('<=', 0.0)}, ('src', ('>', 11.0))),
+    ({'actDepTime': ('>', 4.0), 'actArrTime': ('<=', 0.0)}, ('schedDepTime', ('>', 4.0))),
+    ({'actDepTime': ('>', 4.0), 'actArrTime': ('<=', 0.0)}, ('src', ('<=', 0.0))),
+    ({'schedDepTime': ('>', 3.0), 'actArrTime': ('<=', 0.0)}, ('schedArrTime', ('<=', 0.0))),
+    ({'actDepTime': ('>', 4.0), 'actArrTime': ('<=', 0.0)}, ('schedArrTime', ('>', 4.0))),
+    ({'actDepTime': ('>', 4.0), 'actArrTime': ('<=', 0.0)}, ('schedDepTime', ('<=', 0.0))),
+    ({'schedArrTime': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('schedDepTime', ('>', 4.0))),
+    ({'schedDepTime': ('>', 3.0), 'actDepTime': ('<=', 0.0)}, ('actArrTime', ('>', 4.0))),
+    ({'actDepTime': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('schedArrTime', ('<=', 0.0))),
+    ({'actDepTime': ('<=', 0.0), 'schedArrTime': ('>', 4.0)}, ('schedDepTime', ('<=', 0.0))),
+    ({'actDepTime': ('<=', 0.0), 'schedArrTime': ('>', 4.0)}, ('actArrTime', ('>', 4.0))),
+    ({'actDepTime': ('<=', 0.0), 'schedArrTime': ('>', 4.0)}, ('src', ('>', 11.0))),
+    ({'actDepTime': ('<=', 0.0), 'schedArrTime': ('>', 4.0)}, ('src', ('<=', 0.0))),
+    ({'actDepTime': ('<=', 0.0), 'schedArrTime': ('>', 4.0)}, ('flight', ('>', 11.0))),
+    ({'schedArrTime': ('>', 4.0), 'actArrTime': ('<=', 0.0)}, ('actDepTime', ('>', 4.0))),
+    ({'actDepTime': ('<=', 0.0), 'schedArrTime': ('>', 4.0)}, ('actArrTime', ('<=', 0.0))),
+    ({'schedDepTime': ('>', 3.0), 'actArrTime': ('<=', 0.0)}, ('actDepTime', ('<=', 0.0))),
+    ({'flight': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('schedArrTime', ('>', 4.0))),
+    ({'flight': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('schedDepTime', ('>', 4.0))),
+    ({'actDepTime': ('>', 4.0), 'schedArrTime': ('<=', 0.0)}, ('actArrTime', ('>', 4.0))),
+    ({'schedDepTime': ('<=', 0.0), 'actDepTime': ('>', 4.0)}, ('flight', ('>', 11.0))),
+    ({'schedDepTime': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('schedArrTime', ('<=', 0.0))),
+    ({'actDepTime': ('>', 4.0), 'schedArrTime': ('<=', 0.0)}, ('src', ('>', 11.0))),
+    ({'schedArrTime': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('actDepTime', ('<=', 0.0))),
+    ({'schedDepTime': ('<=', 0.0), 'actDepTime': ('>', 4.0)}, ('schedArrTime', ('>', 4.0))),
+    ({'actDepTime': ('>', 4.0), 'schedArrTime': ('<=', 0.0)}, ('schedDepTime', ('>', 4.0))),
+    ({'actDepTime': ('>', 4.0), 'schedArrTime': ('<=', 0.0)}, ('src', ('<=', 0.0))),
+    ({'actDepTime': ('>', 4.0), 'schedArrTime': ('<=', 0.0)}, ('flight', ('>', 11.0))),
+    ({'actDepTime': ('>', 4.0), 'schedArrTime': ('<=', 0.0)}, ('actArrTime', ('<=', 0.0))),
+    ({'schedDepTime': ('<=', 0.0), 'actDepTime': ('>', 4.0)}, ('actArrTime', ('<=', 0.0))),
+    ({'flight': ('<=', 0.0), 'actDepTime': ('>', 4.0)}, ('schedDepTime', ('>', 4.0))),
+    ({'schedDepTime': ('<=', 0.0), 'actArrTime': ('>', 4.0)}, ('actDepTime', ('<=', 0.0))),
+    ({'flight': ('<=', 0.0), 'actDepTime': ('>', 4.0)}, ('schedArrTime', ('>', 4.0))),
+    ({'schedDepTime': ('<=', 0.0), 'schedArrTime': ('<=', 0.0)}, ('actDepTime', ('<=', 0.0))),
+    ({'flight': ('<=', 0.0)}, ('actDepTime', ('<=', 0.0))),
+    ({'flight': ('>', 10.0), 'schedDepTime': ('<=', 0.0), 'actArrTime': ('<=', 0.0)}, ('src', ('>', 11.0))),
+    ({'src': ('<=', 0.0), 'flight': ('<=', 0.0)}, ('schedDepTime', ('>', 4.0))),
+    ({'flight': ('>', 10.0), 'schedDepTime': ('<=', 0.0), 'actArrTime': ('<=', 0.0)}, ('actDepTime', ('>', 4.0))),
+    ({'flight': ('>', 10.0), 'schedDepTime': ('<=', 0.0), 'schedArrTime': ('>', 4.0)}, ('actArrTime', ('>', 4.0))),
+    ({'src': ('<=', 0.0), 'flight': ('<=', 0.0)}, ('schedArrTime', ('>', 4.0))),
+    ({'flight': ('>', 10.0), 'schedDepTime': ('<=', 0.0), 'actArrTime': ('<=', 0.0)}, ('schedArrTime', ('>', 4.0))),
+    ({'src': ('<=', 0.0), 'flight': ('<=', 0.0)}, ('actArrTime', ('>', 4.0))),
+    ({'flight': ('>', 10.0), 'schedDepTime': ('<=', 0.0), 'actArrTime': ('<=', 0.0)}, ('src', ('<=', 0.0))),
+    ({'src': ('<=', 0.0), 'flight': ('<=', 0.0)}, ('actDepTime', ('>', 4.0))),
+]
